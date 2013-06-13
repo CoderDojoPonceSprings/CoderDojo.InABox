@@ -1,0 +1,3247 @@
+{
+
+    "results": [
+        {
+            "mentor" : false,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/10109583/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/1/1/1/2/member_7744370.jpeg",
+            "answers": [
+                {
+                    "answer": "VersionOne, Inc.",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "VersionOne, Inc.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos3.meetupstatic.com/photos/member/1/1/1/2/member_7744370.jpeg",
+                "highres_link": "http://photos1.meetupstatic.com/photos/member/1/1/1/2/highres_7744370.jpeg",
+                "thumb_link": "http://photos1.meetupstatic.com/photos/member/1/1/1/2/thumb_7744370.jpeg",
+                "photo_id": 7744370
+            },
+            "member_id": 10109583,
+            "visited": "1368459319000",
+            "bio": "VersionOne, Inc.",
+            "created": "1368461225000",
+            "updated": "1368461225000",
+            "name": "Aimee Gralton",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "mentor" : true,            
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/92747782/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/c/9/6/member_116397222.jpeg",
+            "answers": [ ],
+            "photo": {
+                "photo_link": "http://photos3.meetupstatic.com/photos/member/d/f/8/6/member_116397222.jpeg",
+                "highres_link": "http://photos3.meetupstatic.com/photos/member/d/f/8/6/highres_116397222.jpeg",
+                "thumb_link": "http://photos3.meetupstatic.com/photos/member/d/f/8/6/thumb_116397222.jpeg",
+                "photo_id": 116397222
+            },
+            "member_id": 92747782,
+            "visited": "1368538033000",
+            "bio": "I'm a UI/UX Designer with VersionOne Inc. makers of fine Agile Software.",
+            "created": "1368110804000",
+            "updated": "1368122167000",
+            "name": "Matthew Almand",
+            "role": "Co-Organizer",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "mentor" : true,            
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/10128182/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/f/4/8/member_36609912.jpeg",
+            "answers": [
+                {
+                    "answer": "JavaScript, Java, Rails, Mobile",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Python, Scratch, JavaScript",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "Interested to see how you teach coding to children",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos2.meetupstatic.com/photos/member/2/6/b/8/member_36609912.jpeg",
+                "thumb_link": "http://photos2.meetupstatic.com/photos/member/2/6/b/8/thumb_36609912.jpeg",
+                "photo_id": 36609912
+            },
+            "member_id": 10128182,
+            "visited": "1368564132000",
+            "bio": "Software hacker",
+            "created": "1368564880000",
+            "updated": "1368564880000",
+            "name": "pratik patel",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "mentor" : true,            
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/6642716/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/1/7/3/6/member_32069942.jpeg",
+            "answers": [
+                {
+                    "answer": "Java, Scala, Android",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I enjoy teaching in general, but I spent a lot of time in school teaching others coding and I'd like to spend more time helping others.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos4.meetupstatic.com/photos/member/7/4/f/6/member_32069942.jpeg",
+                "highres_link": "http://photos4.meetupstatic.com/photos/member/7/4/f/6/highres_32069942.jpeg",
+                "thumb_link": "http://photos2.meetupstatic.com/photos/member/7/4/f/6/thumb_32069942.jpeg",
+                "photo_id": 32069942
+            },
+            "member_id": 6642716,
+            "visited": "1368612720000",
+            "bio": "Recent computer science graduate.",
+            "created": "1368619800000",
+            "updated": "1368619800000",
+            "name": "Alan M",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/47155812/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/c/5/a/member_117843162.jpeg",
+            "answers": [
+                {
+                    "answer": "n/a",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "My son is happiest when he is on the computer. I have learned more about the computer. I and my son have a great deal of curiosity about the world of coding. ",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos1.meetupstatic.com/photos/member/c/5/a/member_117843162.jpeg",
+                "thumb_link": "http://photos1.meetupstatic.com/photos/member/c/5/a/thumb_117843162.jpeg",
+                "photo_id": 117843162
+            },
+            "member_id": 47155812,
+            "visited": "1368651609000",
+            "bio": "Hello I am a single mom with a 7 year old son.",
+            "created": "1368656282000",
+            "updated": "1368656282000",
+            "name": "Maria Elizabeth Johnson",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "mentor" : true,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/76899212/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/1/3/f/8/member_102665112.jpeg",
+            "answers": [
+                {
+                    "answer": "Java, Javascript",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "N/A",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos2.meetupstatic.com/photos/member/1/3/f/8/member_102665112.jpeg",
+                "highres_link": "http://photos4.meetupstatic.com/photos/member/1/3/f/8/highres_102665112.jpeg",
+                "thumb_link": "http://photos4.meetupstatic.com/photos/member/1/3/f/8/thumb_102665112.jpeg",
+                "photo_id": 102665112
+            },
+            "member_id": 76899212,
+            "visited": "1368719295000",
+            "bio": "Java developer",
+            "created": "1368567401000",
+            "updated": "1368719391000",
+            "name": "Venkatesh Damodaran",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/12693010/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/2/2/8/member_83772552.jpeg",
+            "answers": [
+                {
+                    "answer": "N/A",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Java, HTML, Javascript, CSS",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I have 5 children and I would like them all to begin learning to code",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos1.meetupstatic.com/photos/member/3/1/0/8/member_83772552.jpeg",
+                "highres_link": "http://photos1.meetupstatic.com/photos/member/3/1/0/8/highres_83772552.jpeg",
+                "thumb_link": "http://photos1.meetupstatic.com/photos/member/3/1/0/8/thumb_83772552.jpeg",
+                "photo_id": 83772552
+            },
+            "member_id": 12693010,
+            "visited": "1368924600000",
+            "bio": "I am a seasoned developer and software architect.",
+            "created": "1368925337000",
+            "updated": "1368925337000",
+            "name": "Denroy Bercier",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "visited": "1370270122000",
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/15596651/",
+            "bio": "Technology Sales",
+            "updated": "1368564822000",
+            "status": "active",
+            "created": "1368564822000",
+            "name": "James Chinn",
+            "answers": [
+                {
+                    "answer": "N/A",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Python",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "Helping my kids learn to code",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { },
+            "member_id": 15596651
+        },
+        {
+            "mentor" : true,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/39955752/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/9/a/8/member_43928472.jpeg",
+            "answers": [
+                {
+                    "answer": "java, scala, lift, compass/scss, bootstrap, html, css, javascript, jquery, knockoutJS ",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I think the idea is interesting and would be willing to helping out.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos1.meetupstatic.com/photos/member/2/1/1/8/member_43928472.jpeg",
+                "highres_link": "http://photos1.meetupstatic.com/photos/member/2/1/1/8/highres_43928472.jpeg",
+                "thumb_link": "http://photos1.meetupstatic.com/photos/member/2/1/1/8/thumb_43928472.jpeg",
+                "photo_id": 43928472
+            },
+            "member_id": 39955752,
+            "visited": "1370317649000",
+            "bio": "i'm a software engineer and team lead @elemica in atlanta. i've done front end and backend dev.",
+            "created": "1368568680000",
+            "updated": "1368568680000",
+            "name": "Mike Rivera",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "mentor" : true,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/1398371/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/a/a/f/member_8336735.jpeg",
+            "answers": [
+                {
+                    "answer": "Java,Javascript,Html,iOS,Android",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Scratch",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I am interested in starting a Coderdojo chapter in Charlotte, NC, and I would like to share knowledge and help each other.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos4.meetupstatic.com/photos/member/d/d/9/f/member_8336735.jpeg",
+                "highres_link": "http://photos4.meetupstatic.com/photos/member/d/d/9/f/highres_8336735.jpeg",
+                "thumb_link": "http://photos4.meetupstatic.com/photos/member/d/d/9/f/thumb_8336735.jpeg",
+                "photo_id": 8336735
+            },
+            "member_id": 1398371,
+            "visited": "1370399212000",
+            "bio": "I work for Fiserv and I am a J2EE programmer. We use VersionOne Agile/Scrum too :-)",
+            "created": "1370200523000",
+            "updated": "1370200523000",
+            "name": "philip",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "mentor" : true,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/12769598/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/7/5/a/member_40237882.jpeg",
+            "answers": [
+                {
+                    "answer": "CSharp, Web, JavaScript, MVC",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "CSharp, Mono, JavaScript, mobile",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "Selfishly, I have 2 kids that both have shown an interest in software, and I'm hoping to cultivate that interest so it becomes a shared interest :) Less selfishly :), I want to help future generations of developers learn the joy of creation and software development.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos1.meetupstatic.com/photos/member/9/3/f/a/member_40237882.jpeg",
+                "thumb_link": "http://photos3.meetupstatic.com/photos/member/9/3/f/a/thumb_40237882.jpeg",
+                "photo_id": 40237882
+            },
+            "member_id": 12769598,
+            "visited": "1370435775000",
+            "bio": "Software developer, old, learning.",
+            "created": "1370437901000",
+            "updated": "1370437901000",
+            "name": "Ricardo Diaz",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "mentor" : true,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/29568202/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/3/2/2/member_29304802.jpeg",
+            "answers": [
+                {
+                    "answer": "Java",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "robotics, labview, javascript",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "My son is interested in programming and I am therefore willing to help out ",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos1.meetupstatic.com/photos/member/6/0/e/2/member_29304802.jpeg",
+                "thumb_link": "http://photos3.meetupstatic.com/photos/member/6/0/e/2/thumb_29304802.jpeg",
+                "photo_id": 29304802
+            },
+            "member_id": 29568202,
+            "visited": "1370442868000",
+            "bio": "I am a java programmer. Presently , I program BI (Business Intelligence) for a Manufacturing company",
+            "created": "1370443907000",
+            "updated": "1370443907000",
+            "name": "christa king",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {               
+            "mentor": true,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/114942/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/1/4/f/c/member_104999372.jpeg",
+            "answers": [
+                {
+                    "answer": "javascript, CSharp, python",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I want to encourage kids to explore STEM. ",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos4.meetupstatic.com/photos/member/e/7/e/c/member_104999372.jpeg",
+                "highres_link": "http://photos4.meetupstatic.com/photos/member/e/7/e/c/highres_104999372.jpeg",
+                "thumb_link": "http://photos2.meetupstatic.com/photos/member/e/7/e/c/thumb_104999372.jpeg",
+                "photo_id": 104999372
+            },
+            "member_id": 114942,
+            "visited": "1370479962000",
+            "bio": "Developer",
+            "created": "1369237632000",
+            "updated": "1369237632000",
+            "name": "elstanfill",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/94737152/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/a/f/2/member_119714802.jpeg",
+            "answers": [
+                {
+                    "answer": "I am not a professional developer/technologist.",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "FireAlpaca, JavaScript, Python",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "My daughter, Della, is 15 years old and is interested in exploring programming as a future career option. My husband and I both have backgrounds in medicine, so we are happy to find some knowledgeable mentors for her to begin the exploration.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos3.meetupstatic.com/photos/member/3/9/d/2/member_119714802.jpeg",
+                "thumb_link": "http://photos3.meetupstatic.com/photos/member/3/9/d/2/thumb_119714802.jpeg",
+                "photo_id": 119714802
+            },
+            "member_id": 94737152,
+            "visited": "1370489855000",
+            "bio": "My name is Dana Boyle, and my daughter Della is interested in attending CoderDojo. ",
+            "created": "1369338385000",
+            "updated": "1369338385000",
+            "name": "Dana Boyle",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {            
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/73792102/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/7/d/c/member_87728012.jpeg",
+            "answers": [
+                {
+                    "answer": "NA",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Scratch",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I'd like to get a basic understanding of programing and get my kids started with it as well.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos3.meetupstatic.com/photos/member/1/f/4/c/member_87728012.jpeg",
+                "highres_link": "http://photos3.meetupstatic.com/photos/member/1/f/4/c/highres_87728012.jpeg",
+                "thumb_link": "http://photos3.meetupstatic.com/photos/member/1/f/4/c/thumb_87728012.jpeg",
+                "photo_id": 87728012
+            },
+            "member_id": 73792102,
+            "visited": "1370532180000",
+            "bio": "I'm a homeschooling mom of twin 10-yr old boys. Once upon a time I studied a bit of coding. Just enough to be trouble. Not enough to be useful. My sons are wildly interested in learning to code and I don't know enough to help them out.",
+            "created": "1370534356000",
+            "updated": "1370534356000",
+            "name": "Kristyn McGeehan",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/36969752/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/7/1/e/member_90169822.jpeg",
+            "answers": [
+                {
+                    "answer": "N/A",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Java",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I used to do some programming, but I've been out of the workforce a long time. We're way up north, but I thought I may be able to bring my son down for some classes",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos4.meetupstatic.com/photos/member/c/2/9/e/member_90169822.jpeg",
+                "highres_link": "http://photos2.meetupstatic.com/photos/member/c/2/9/e/highres_90169822.jpeg",
+                "thumb_link": "http://photos4.meetupstatic.com/photos/member/c/2/9/e/thumb_90169822.jpeg",
+                "photo_id": 90169822
+            },
+            "member_id": 36969752,
+            "visited": "1370544242000",
+            "bio": "I'm a mom of a 15yo son interested in programming.",
+            "created": "1370543218000",
+            "updated": "1370543218000",
+            "name": "Julie G",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "visited": "1370547946000",
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/96752572/",
+            "bio": "Homeschool mom of 2. Looking to have them be well rounded in all aspects of learning.",
+            "updated": "1370549185000",
+            "status": "active",
+            "created": "1370549185000",
+            "name": "Jeannetta",
+            "answers": [
+                {
+                    "answer": "I am not a developer. I have written code many moons ago. I think it was Visual C and COBOL.",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "HTML, Web, Design, JavaScript, CSS, Apps, Java",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "Interesting in getting my kids excited about coding.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { },
+            "member_id": 96752572
+        },
+        {
+            "mentor": true,
+            "visited": "1370548840000",
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/94462642/",
+            "bio": "I am a Product Manager for VersionOne. I have a degree in Electronic Engineering and a background in software development.",
+            "updated": "1369182794000",
+            "status": "active",
+            "created": "1369182794000",
+            "name": "Jerry Odenwelder",
+            "answers": [
+                {
+                    "answer": "C-language,  CPP, Java, Python, CSharp, JavaScript, hardware",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Games, Robotics",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "Teacher/Mentor",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { },
+            "member_id": 94462642
+        },
+        {
+            "visited": "1370551919000",
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/67096772/",
+            "bio": "My daughter is 15 y.o. home schooler who has been going to the GA Gwinnett College coding camp for the last few years. She loves it. We were hoping to find more like minded girls and an outlet for her curiosity.",
+            "updated": "1370552256000",
+            "status": "active",
+            "created": "1370536913000",
+            "name": "Barrie Price-Kerr",
+            "answers": [
+                {
+                    "answer": "Not a developer",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Games, Scratch",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I think anything that keeps girls engaged in math and science is a good thing. ",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { },
+            "member_id": 67096772
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/95416572/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/d/6/8/member_120921432.jpeg",
+            "answers": [
+                {
+                    "answer": "N/A - but willing to volunteer time to promote the program: marketing materials, social media, PR.",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Games, Scratch",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "Foster my kids' awesome natural drive to create new & interesting stuff that no one else knows how to do.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos2.meetupstatic.com/photos/member/5/3/b/8/member_120921432.jpeg",
+                "thumb_link": "http://photos2.meetupstatic.com/photos/member/5/3/b/8/thumb_120921432.jpeg",
+                "photo_id": 120921432
+            },
+            "member_id": 95416572,
+            "visited": "1370564024000",
+            "bio": "VersionOne marketing chick, mom of 3 who are stoked to join the program and learn really cool, adventurous stuff.",
+            "created": "1369791484000",
+            "updated": "1369791484000",
+            "name": "Andrea Keeble",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "visited": "1370567231000",
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/24137042/",
+            "bio": "HR@VersionOne",
+            "updated": "1368712549000",
+            "status": "active",
+            "created": "1368712549000",
+            "name": "Michelle Bullard Jager",
+            "answers": [
+                {
+                    "answer": "n/a",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "n/a",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { },
+            "member_id": 24137042
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/67063632/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/2/b/e/member_78588702.jpeg",
+            "answers": [
+                {
+                    "answer": "Non",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "python, java",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "Very interested in learning everything there is to learn about computers, Elijah would love to be able to become a gaming programmer.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos2.meetupstatic.com/photos/member/b/e/3/e/member_78588702.jpeg",
+                "thumb_link": "http://photos4.meetupstatic.com/photos/member/b/e/3/e/thumb_78588702.jpeg",
+                "photo_id": 78588702
+            },
+            "member_id": 67063632,
+            "visited": "1370569367000",
+            "bio": "Hi! I am a mom to a 14 year old young man, and we are in our 3rd year of homeschooling.",
+            "created": "1370551813000",
+            "updated": "1370551813000",
+            "name": "Angela Bacon",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "mentor": true,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/4310165/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/2/5/8/member_3510600.jpeg",
+            "answers": [
+                {
+                    "answer": "Web, console, Javascript, Python, Ruby",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Web, console, Javascript, Python, Ruby",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I would like to teach.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos3.meetupstatic.com/photos/member/7/7/8/8/member_3510600.jpeg",
+                "highres_link": "http://photos3.meetupstatic.com/photos/member/7/7/8/8/highres_3510600.jpeg",
+                "thumb_link": "http://photos3.meetupstatic.com/photos/member/7/7/8/8/thumb_3510600.jpeg",
+                "photo_id": 3510600
+            },
+            "member_id": 4310165,
+            "visited": "1370583340000",
+            "bio": "I am a Javascript Hacker in Atlanta, a parent, and I teach people to code regularly.",
+            "created": "1368567393000",
+            "updated": "1368567393000",
+            "name": "Toby Ho",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/67185602/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/1/5/1/a/member_123281402.jpeg",
+            "answers": [
+                {
+                    "answer": "I am not a developer, although I am a network guy and a technology enthusiast ",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Mobile, HTML",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I am interested in your Young Coders program",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos2.meetupstatic.com/photos/member/a/1/b/a/member_123281402.jpeg",
+                "thumb_link": "http://photos4.meetupstatic.com/photos/member/a/1/b/a/thumb_123281402.jpeg",
+                "photo_id": 123281402
+            },
+            "member_id": 67185602,
+            "visited": "1370608898000",
+            "bio": "I am a network engineer and hardware technician.",
+            "created": "1370610391000",
+            "updated": "1370610391000",
+            "name": "Amos Jones",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "visited": "1370612244000",
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/96850422/",
+            "bio": "Mother of one who also mothers my nieces and nephew.",
+            "updated": "1370612663000",
+            "status": "active",
+            "created": "1370612663000",
+            "name": "Jo Anna",
+            "answers": [
+                {
+                    "answer": "NA",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I learn of this from my Facebook group. Daughter is into STEAM so just another avenue to get her exposed.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { },
+            "member_id": 96850422
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/96851732/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/7/d/2/member_123290002.jpeg",
+            "answers": [
+                {
+                    "answer": "See above",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Web, Mobile",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "Homeschooling mom. Self taught in some programming languages eg PHP/mySQL, css/html, JavaScript and c+. Would like my children to get some coding experience to see how they like it",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos2.meetupstatic.com/photos/member/c/3/5/2/member_123290002.jpeg",
+                "thumb_link": "http://photos4.meetupstatic.com/photos/member/c/3/5/2/thumb_123290002.jpeg",
+                "photo_id": 123290002
+            },
+            "member_id": 96851732,
+            "visited": "1370613141000",
+            "bio": "Hello",
+            "created": "1370614717000",
+            "updated": "1370614717000",
+            "name": "Liberata B. Maroon",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "mentor": true,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/9460272/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/2/c/4/member_6504708.jpeg",
+            "answers": [
+                {
+                    "answer": "Visual Studio, Embacadero Delphi, Php, Windows",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I am looking to reach out to the community and help kids who are looking to getting into the IT field",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos2.meetupstatic.com/photos/member/6/0/8/4/member_6504708.jpeg",
+                "highres_link": "http://photos2.meetupstatic.com/photos/member/6/0/8/4/highres_6504708.jpeg",
+                "thumb_link": "http://photos4.meetupstatic.com/photos/member/6/0/8/4/thumb_6504708.jpeg",
+                "photo_id": 6504708
+            },
+            "member_id": 9460272,
+            "visited": "1370613723000",
+            "bio": "I am a software developer who has been programming for the past 12 years in Delphi, and visual studio.",
+            "created": "1370439219000",
+            "updated": "1370439219000",
+            "name": "Roland Chie",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/52050102/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/b/7/e/member_59294942.jpeg",
+            "answers": [
+                {
+                    "answer": "N/A",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "Both my kids are interested in anything computer related, and I have one who is very interested in learning to code",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos4.meetupstatic.com/photos/member/3/a/5/e/member_59294942.jpeg",
+                "thumb_link": "http://photos4.meetupstatic.com/photos/member/3/a/5/e/thumb_59294942.jpeg",
+                "photo_id": 59294942
+            },
+            "member_id": 52050102,
+            "visited": "1370613840000",
+            "bio": "Homeschooling mom of three",
+            "created": "1370614698000",
+            "updated": "1370614698000",
+            "name": "Jessica McGuire",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "visited": "1370616137000",
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/96813552/",
+            "bio": "I'm a homeschooling mom of 2 dd's.",
+            "updated": "1370590362000",
+            "status": "active",
+            "created": "1370590362000",
+            "name": "Gail Quinteros",
+            "answers": [
+                {
+                    "answer": "This doesn't apply to me.",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "My daughters have an interest in learning coding and I don't know anything about coding.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { },
+            "member_id": 96813552
+        },
+        {
+            "mentor": true,
+            "visited": "1370626623000",
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/60321802/",
+            "bio": "Developer @ VersionOne",
+            "updated": "1369234499000",
+            "status": "active",
+            "created": "1369234499000",
+            "name": "Greg Johnson",
+            "answers": [
+                {
+                    "answer": "DotNET, Scratch, XNA Framework, web, CSharp",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Scratch, Games",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I'm interested in contributed to the community and supporting the next generation of code slingers.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { },
+            "member_id": 60321802
+        },
+        {
+            "visited": "1370630652000",
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/96888852/",
+            "bio": "Homeschool mom of teen interested in learning more",
+            "updated": "1370632082000",
+            "status": "active",
+            "created": "1370632082000",
+            "name": "Maryann Locklin",
+            "answers": [
+                {
+                    "answer": "N/A",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "Would like my child to attend the session on Tuesday evening to learn more",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { },
+            "member_id": 96888852
+        },
+        {
+            "mentor": true,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/8883647/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/b/6/0/member_58712912.jpeg",
+            "answers": [
+                {
+                    "answer": "HTML, CSS, javascript, web, UI",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "Helping kids learn technology. Contributing something useful to my community.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos2.meetupstatic.com/photos/member/8/0/9/0/member_58712912.jpeg",
+                "highres_link": "http://photos4.meetupstatic.com/photos/member/8/0/9/0/highres_58712912.jpeg",
+                "thumb_link": "http://photos4.meetupstatic.com/photos/member/8/0/9/0/thumb_58712912.jpeg",
+                "photo_id": 58712912
+            },
+            "member_id": 8883647,
+            "visited": "1370632190000",
+            "bio": "Coder since '72 (remember punched cards). Now retired, but doing web design/development on the side.",
+            "created": "1370633973000",
+            "updated": "1370633973000",
+            "name": "Steve Rose",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "visited": "1370649302000",
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/96922162/",
+            "bio": "Hello all! I am Janceata Rogers and I look forward to speaking with everyone.",
+            "updated": "1370652414000",
+            "status": "active",
+            "created": "1370652414000",
+            "name": "Janceata Rogers",
+            "answers": [
+                {
+                    "answer": "N/a",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I would love for my child to learn coding and programming.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { },
+            "member_id": 96922162
+        },
+        {
+            "mentor": true,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/7320518/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/1/5/4/b/member_21473451.jpeg",
+            "answers": [
+                {
+                    "answer": "I want to learn about my opportunity to pass on my knowledge to the next generation of software developers. I've been a software developer for the past 13 years specializing in mobile and webtechnologies",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                },                
+                {
+                    "answer": "CSharp, Objective C",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos4.meetupstatic.com/photos/member/d/0/c/b/member_21473451.jpeg",
+                "highres_link": "http://photos4.meetupstatic.com/photos/member/d/0/c/b/highres_21473451.jpeg",
+                "thumb_link": "http://photos2.meetupstatic.com/photos/member/d/0/c/b/thumb_21473451.jpeg",
+                "photo_id": 21473451
+            },
+            "member_id": 7320518,
+            "visited": "1370698463000",
+            "bio": "I'm a software developer for VersionOne and a parent of 3.",
+            "created": "1370519106000",
+            "updated": "1370519106000",
+            "name": "Tony",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/10486601/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/c/6/d/member_12663181.jpeg",
+            "answers": [
+                {
+                    "answer": "n/a",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "He's interested in computers.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "member_id": 10486601,
+            "visited": "1370709979000",
+            "bio": "I'm a mom to a son.",
+            "updated": "1370711023000",
+            "created": "1370711023000",
+            "name": "cammie",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/34819752/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/9/5/8/member_36614392.jpeg",
+            "answers": [
+                {
+                    "answer": "Sorry I am not a professional.",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Alice, Scratch, Mindstorm",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I have a 9 year old that does most of the programming for our Robotics Team and thought she would like to explore how to code.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "member_id": 34819752,
+            "visited": "1370733542000",
+            "bio": "I am a Robotics Coach and Mom.",
+            "updated": "1370546420000",
+            "created": "1370546420000",
+            "name": "Bisa Kenney",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/5924591/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/6/a/a/member_3043706.jpeg",
+            "answers": [
+                {
+                    "answer": "not a professional developer or technologist.",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Scratch",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "Interested in learning how techniques are applied for a diverse age group.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos2.meetupstatic.com/photos/member/a/a/b/a/member_3043706.jpeg",
+                "highres_link": "http://photos2.meetupstatic.com/photos/member/a/a/b/a/highres_3043706.jpeg",
+                "thumb_link": "http://photos2.meetupstatic.com/photos/member/a/a/b/a/thumb_3043706.jpeg",
+                "photo_id": 3043706
+            },
+            "member_id": 5924591,
+            "visited": "1370754667000",
+            "bio": "Homeschool mom of 4 that would love to offer this opportunity to all of my kids.",
+            "created": "1370777902000",
+            "updated": "1370777902000",
+            "name": "LaVerne Cox",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "mentor": true,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/14512900/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/4/6/c/member_93805132.jpeg",
+            "answers": [
+                {
+                    "answer": "To introduce my son to development",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                },
+                {
+                    "answer": "CPP",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Web, graphics, gaming, multimedia",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos2.meetupstatic.com/photos/member/6/2/2/c/member_93805132.jpeg",
+                "highres_link": "http://photos2.meetupstatic.com/photos/member/6/2/2/c/highres_93805132.jpeg",
+                "thumb_link": "http://photos4.meetupstatic.com/photos/member/6/2/2/c/thumb_93805132.jpeg",
+                "photo_id": 93805132
+            },
+            "member_id": 14512900,
+            "visited": "1370774657000",
+            "bio": "Hey",
+            "created": "1368587450000",
+            "updated": "1368587450000",
+            "name": "Ram",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/4549190/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/1/4/5/1/member_13517201.jpeg",
+            "answers": [
+                {
+                    "answer": "n/a",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "mobile, games, scratch, python",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "n/a",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "member_id": 4549190,
+            "visited": "1370782290000",
+            "bio": "My kids are homeschooled and both interested in programming, coding, and anything tech!",
+            "updated": "1370608696000",
+            "created": "1370608696000",
+            "name": "marianna",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "visited": "1370785752000",
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/9160589/",
+            "bio": "Homeschooling mom of three kids aged 7, 10, and 12. Also a cub and girl scout leader.",
+            "updated": "1370700010000",
+            "status": "active",
+            "created": "1370700010000",
+            "name": "Cathie McCabe",
+            "answers": [
+                {
+                    "answer": "Don't think I ever qualified as a professional, just a high-end user really, but I'm a quick learner and willing to help out where I can.",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "ios, android, web, javascript",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "Coder Dojo sounds completely cool! I would love my kids to learn programming. I have some html coding experience, but it's been over a decade since I've used it, and the technology has left me in the dust.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { },
+            "member_id": 9160589
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/97005562/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/5/7/0/member_123553392.jpeg",
+            "answers": [
+                {
+                    "answer": "My husband is proficient in PROVIDEX.",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Java, JavaScript",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "We are a homeschool family trying to find ways to educate and inspire our children in their natural talents and passions. My son has shown great interest in computers and we want to support him and connect him with others who can be of help in his career path.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos3.meetupstatic.com/photos/member/3/4/5/0/member_123553392.jpeg",
+                "highres_link": "http://photos3.meetupstatic.com/photos/member/3/4/5/0/highres_123553392.jpeg",
+                "thumb_link": "http://photos3.meetupstatic.com/photos/member/3/4/5/0/thumb_123553392.jpeg",
+                "photo_id": 123553392
+            },
+            "member_id": 97005562,
+            "visited": "1370790731000",
+            "bio": "Southern girl, married to a computer programmer. Neal and I will alternate driving our son to CoderDojo meetings. I know ZERO about programming myself, have worked administrative jobs USING computers. Like Dr Who & Mythbusters.",
+            "created": "1370784745000",
+            "updated": "1370784745000",
+            "name": "Janice McKinney",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/61023282/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/1/3/3/0/member_116194912.jpeg",
+            "answers": [ ],
+            "photo": {
+                "photo_link": "http://photos2.meetupstatic.com/photos/member/8/8/6/0/member_116194912.jpeg",
+                "highres_link": "http://photos4.meetupstatic.com/photos/member/8/8/6/0/highres_116194912.jpeg",
+                "thumb_link": "http://photos4.meetupstatic.com/photos/member/8/8/6/0/thumb_116194912.jpeg",
+                "photo_id": 116194912
+            },
+            "member_id": 61023282,
+            "visited": "1370805727000",
+            "created": "1367952399000",
+            "updated": "1368033884000",
+            "name": "Ian Culling",
+            "role": "Organizer",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "visited": "1370821638000",
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/96909062/",
+            "bio": "My name is Mandy and next year will be our first year doing homeschool.",
+            "updated": "1370643009000",
+            "status": "active",
+            "created": "1370643009000",
+            "name": "Mandy",
+            "answers": [
+                {
+                    "answer": "n/a",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Java,  CPP, Python, Minecraft",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "n/a",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { },
+            "member_id": 96909062
+        },
+        {
+            "visited": "1370825762000",
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/96855042/",
+            "bio": "Actor/Storyteller/Educator",
+            "updated": "1370615639000",
+            "status": "active",
+            "created": "1370615639000",
+            "name": "Barry Stewart Mann",
+            "answers": [
+                {
+                    "answer": "None",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Any and all.",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "n/a",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { },
+            "member_id": 96855042
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/91646092/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/5/0/member_80.jpeg",
+            "answers": [
+                {
+                    "answer": "n/a",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "android",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "n/a",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "member_id": 91646092,
+            "visited": "1370829235000",
+            "bio": "My name is Janet Davis. I work for VersionOne as a Senior Accountant. ",
+            "updated": "1369926650000",
+            "created": "1369926650000",
+            "name": "Janet Davis",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "mentor": true,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/52128012/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/1/0/9/c/member_70882252.jpeg",
+            "answers": [
+                {
+                    "answer": "HTML, javascript, ruby, actionscript, games, animation",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I would live to teach/mentor/share the love for programming",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos3.meetupstatic.com/photos/member/5/6/e/c/member_70882252.jpeg",
+                "highres_link": "http://photos1.meetupstatic.com/photos/member/5/6/e/c/highres_70882252.jpeg",
+                "thumb_link": "http://photos1.meetupstatic.com/photos/member/5/6/e/c/thumb_70882252.jpeg",
+                "photo_id": 70882252
+            },
+            "member_id": 52128012,
+            "visited": "1370830875000",
+            "bio": "Software developer and coding enthusiast. ",
+            "created": "1370467412000",
+            "updated": "1370467412000",
+            "name": "J. Holmes",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "visited": "1370868735000",
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/97248512/",
+            "bio": "TeamSpirt volunteer and marketing director for VersionOne.",
+            "updated": "1370869408000",
+            "status": "active",
+            "created": "1370869408000",
+            "name": "Laurie Douglas",
+            "answers": [
+                {
+                    "answer": "n/a",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "Excited about helping VersionOne give back to the community and inspiring the future software developers.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { },
+            "member_id": 97248512
+        },
+        {
+            "visited": "1370870317000",
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/85297952/",
+            "bio": "I'm a homeschooling Mom of two Maker boys.",
+            "updated": "1370543186000",
+            "status": "active",
+            "created": "1370543186000",
+            "name": "Shani",
+            "answers": [
+                {
+                    "answer": "I have an IT degree and would love to help with mentoring.",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Mobile",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "My kids are quite interested in learning to code. They've recently been exposed to Scratch and enjoy it.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { },
+            "member_id": 85297952
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/12005345/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/e/6/2/member_123687682.jpeg",
+            "answers": [
+                {
+                    "answer": "Not a developer, but can test. :)",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I work as a software testing engineer. Iam trying to get my children interested in programming",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos2.meetupstatic.com/photos/member/6/c/2/2/member_123687682.jpeg",
+                "thumb_link": "http://photos4.meetupstatic.com/photos/member/6/c/2/2/thumb_123687682.jpeg",
+                "photo_id": 123687682
+            },
+            "member_id": 12005345,
+            "visited": "1370872495000",
+            "bio": "Iam a parent of a 8 and 17 yr old looking to introduce them to programming.",
+            "created": "1370777893000",
+            "updated": "1370777893000",
+            "name": "Narmada Muthu",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/9890768/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/1/4/2/member_38478322.jpeg",
+            "answers": [
+                {
+                    "answer": "N/A",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I would like to see if my son is interested in this field. ",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos3.meetupstatic.com/photos/member/4/7/9/2/member_38478322.jpeg",
+                "highres_link": "http://photos3.meetupstatic.com/photos/member/4/7/9/2/highres_38478322.jpeg",
+                "thumb_link": "http://photos3.meetupstatic.com/photos/member/4/7/9/2/thumb_38478322.jpeg",
+                "photo_id": 38478322
+            },
+            "member_id": 9890768,
+            "visited": "1370874154000",
+            "bio": "My son is 15 and like most boys is interested in the techy stuff.",
+            "created": "1370864387000",
+            "updated": "1370864387000",
+            "name": "Horse Authority",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "mentor": true,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/43535562/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/9/9/e/member_48614462.jpeg",
+            "answers": [
+                {
+                    "answer": "DotNET, SQL, Windows",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "mobile",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "i like teaching",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos4.meetupstatic.com/photos/member/3/8/7/e/member_48614462.jpeg",
+                "highres_link": "http://photos4.meetupstatic.com/photos/member/3/8/7/e/highres_48614462.jpeg",
+                "thumb_link": "http://photos2.meetupstatic.com/photos/member/3/8/7/e/thumb_48614462.jpeg",
+                "photo_id": 48614462
+            },
+            "member_id": 43535562,
+            "visited": "1370875657000",
+            "bio": ".net programmer",
+            "created": "1370571759000",
+            "updated": "1370571759000",
+            "name": "Kevin",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "mentor": true,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/9423411/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/3/e/member_108006062.jpeg",
+            "answers": [
+                {
+                    "answer": "Agile, Python, JavaScript",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I would like to help people learn to write code... and learn some too! ",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos1.meetupstatic.com/photos/member/1/7/a/e/member_108006062.jpeg",
+                "highres_link": "http://photos1.meetupstatic.com/photos/member/1/7/a/e/highres_108006062.jpeg",
+                "thumb_link": "http://photos1.meetupstatic.com/photos/member/1/7/a/e/thumb_108006062.jpeg",
+                "photo_id": 108006062
+            },
+            "member_id": 9423411,
+            "visited": "1370878403000",
+            "bio": "I work for VersionOne as a Product Specialist.",
+            "created": "1368567381000",
+            "updated": "1368567381000",
+            "name": "Mark Kovacevich",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/12051661/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/7/e/5/member_14846021.jpeg",
+            "answers": [
+                {
+                    "answer": "na",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "My 8 year old son has an interest in computers and engineering. ",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "member_id": 12051661,
+            "visited": "1370880423000",
+            "bio": "My name is Catherine and I am the homeschooling parent of 4.",
+            "updated": "1370881275000",
+            "created": "1370881275000",
+            "name": "Cathy",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "mentor": true,
+            "visited": "1370885108000",
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/64632812/",
+            "bio": "Enterprise Architect @ Intellinet, wife, 4 kids, northern suburbs.",
+            "updated": "1370879305000",
+            "status": "active",
+            "created": "1370879305000",
+            "name": "Russell Smallwood",
+            "answers": [
+                {
+                    "answer": "CSharp, Windows",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Architecture, Windows",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "Twin boys, 10.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { },
+            "member_id": 64632812
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/14634750/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/f/7/0/member_93885952.jpeg",
+            "answers": [
+                {
+                    "answer": "None",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "HTML, JAVA, LabView",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "My 15 year old son is involved in Robotics and might be interested in seminars",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos4.meetupstatic.com/photos/member/b/3/8/0/member_93885952.jpeg",
+                "highres_link": "http://photos4.meetupstatic.com/photos/member/b/3/8/0/highres_93885952.jpeg",
+                "thumb_link": "http://photos2.meetupstatic.com/photos/member/b/3/8/0/thumb_93885952.jpeg",
+                "photo_id": 93885952
+            },
+            "member_id": 14634750,
+            "visited": "1370885157000",
+            "bio": "Entreprenuer with an outdated Computer Science degree.",
+            "created": "1370567069000",
+            "updated": "1370567069000",
+            "name": "Beth Gilchrist",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "mentor": true,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/58214202/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/7/0/a/member_67225802.jpeg",
+            "answers": [
+                {
+                    "answer": "ASP.NET, CSharp, JavaScript, SQL",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I am interested volunteering and I have a 10 year old son interested in learning. ",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos4.meetupstatic.com/photos/member/6/4/c/a/member_67225802.jpeg",
+                "thumb_link": "http://photos2.meetupstatic.com/photos/member/6/4/c/a/thumb_67225802.jpeg",
+                "photo_id": 67225802
+            },
+            "member_id": 58214202,
+            "visited": "1370885220000",
+            "bio": "Solutions Architecture and Development in Microsoft technologies with a focus on SharePoint and ASP.Net development.",
+            "created": "1370879324000",
+            "updated": "1370879324000",
+            "name": "Stephen Vick",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "mentor": true,            
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/44008022/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/2/2/8/member_123972552.jpeg",
+            "answers": [
+                {
+                    "answer": "Networking",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "C-language, Java",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I want to give my children the opportunity to learn programming to see if it is something they would like to do in the future. ",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos2.meetupstatic.com/photos/member/3/1/0/8/member_123972552.jpeg",
+                "thumb_link": "http://photos2.meetupstatic.com/photos/member/3/1/0/8/thumb_123972552.jpeg",
+                "photo_id": 123972552
+            },
+            "member_id": 44008022,
+            "visited": "1370885387000",
+            "bio": "I am a home school parent of two. My son is 14 and my daughter is 12. I was previously a systems engineer with an Atlanta law firm. I also coach an FLL team of 10 kids.",
+            "created": "1370869396000",
+            "updated": "1370869396000",
+            "name": "Eric Richardson",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/11078728/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/1/4/8/4/member_124055252.jpeg",
+            "answers": [
+                {
+                    "answer": "N/a. I'm interested in providing general program support, not mentoring.",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "N/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I'm interested in volunteering to help this effort be successful.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos3.meetupstatic.com/photos/member/8/9/b/4/member_124055252.jpeg",
+                "thumb_link": "http://photos1.meetupstatic.com/photos/member/8/9/b/4/thumb_124055252.jpeg",
+                "photo_id": 124055252
+            },
+            "member_id": 11078728,
+            "visited": "1370887894000",
+            "bio": "Software tester on the best development team ever!",
+            "created": "1370777881000",
+            "updated": "1370888017000",
+            "name": "JoEllen",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/10399004/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/a/4/8/member_107240632.jpeg",
+            "answers": [
+                {
+                    "answer": "n/a",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "My 13 yr old would be interested in ans benefit from this class.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos1.meetupstatic.com/photos/member/5/0/9/8/member_107240632.jpeg",
+                "thumb_link": "http://photos1.meetupstatic.com/photos/member/5/0/9/8/thumb_107240632.jpeg",
+                "photo_id": 107240632
+            },
+            "member_id": 10399004,
+            "visited": "1370890159000",
+            "bio": "Mom of 4 boys.",
+            "created": "1370549191000",
+            "updated": "1370549191000",
+            "name": "ShaRina",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "visited": "1370898226000",
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/3695752/",
+            "bio": "Interested in finding programming classes for my kids.",
+            "updated": "1370899774000",
+            "status": "active",
+            "created": "1370899774000",
+            "name": "Rebecca",
+            "answers": [
+                {
+                    "answer": "n/a",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Mindstorm",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "Interested in finding programming classes for my kids.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { },
+            "member_id": 3695752
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/96771182/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/b/2/e/member_123158862.jpeg",
+            "answers": [
+                {
+                    "answer": "We are not professionals.",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Games, Electronics, Robotics",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "Michael would enjoy creating games.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos4.meetupstatic.com/photos/member/9/7/c/e/member_123158862.jpeg",
+                "highres_link": "http://photos2.meetupstatic.com/photos/member/9/7/c/e/highres_123158862.jpeg",
+                "thumb_link": "http://photos4.meetupstatic.com/photos/member/9/7/c/e/thumb_123158862.jpeg",
+                "photo_id": 123158862
+            },
+            "member_id": 96771182,
+            "visited": "1370903893000",
+            "bio": "Michael Penn is a seven year old homeschool student that enjoys creating puzzles, Powerpoint presentations, writing stories, and blogging. He is entering the fourth grade. He will be accompanied by Althea Penn, his Nana.",
+            "created": "1370557623000",
+            "updated": "1370557623000",
+            "name": "Althea Penn",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/36076092/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/4/3/0/member_38419072.jpeg",
+            "answers": [
+                {
+                    "answer": "N/a",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I think it's awesome that you are offering this program for children and I'm excited about getting my kids involved.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos3.meetupstatic.com/photos/member/4/a/8/0/member_38419072.jpeg",
+                "thumb_link": "http://photos1.meetupstatic.com/photos/member/4/a/8/0/thumb_38419072.jpeg",
+                "photo_id": 38419072
+            },
+            "member_id": 36076092,
+            "visited": "1370903931000",
+            "bio": "Home school mother of 3 living in Alpharetta.",
+            "created": "1370551856000",
+            "updated": "1370551856000",
+            "name": "Lenie Grant",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/53433402/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/6/1/0/member_101809552.jpeg",
+            "answers": [
+                {
+                    "answer": "N/A",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "Want further information about upcoming coding instruction for my 15 year old.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos4.meetupstatic.com/photos/member/c/1/9/0/member_101809552.jpeg",
+                "highres_link": "http://photos2.meetupstatic.com/photos/member/c/1/9/0/highres_101809552.jpeg",
+                "thumb_link": "http://photos4.meetupstatic.com/photos/member/c/1/9/0/thumb_101809552.jpeg",
+                "photo_id": 101809552
+            },
+            "member_id": 53433402,
+            "visited": "1370906341000",
+            "bio": "Homeschooling mother",
+            "created": "1370553930000",
+            "updated": "1370553930000",
+            "name": "Linda Waldrep",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "visited": "1370909625000",
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/97347772/",
+            "bio": "Nickey Williams is a Writer and Home-school mother of two with a degree in Management.",
+            "updated": "1370917832000",
+            "status": "active",
+            "created": "1370917832000",
+            "name": "Nickey Williams",
+            "answers": [
+                {
+                    "answer": "N/A",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "HTML",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "Nickey Williams Mother of Lloyd Williams(9) who is extremely interest in computers and gaming and would like to learn coding. He loves to write and draw, and is active in Muay Thai and JJU!",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { },
+            "member_id": 97347772
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/24988262/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/f/6/6/member_23823942.jpeg",
+            "answers": [
+                {
+                    "answer": "definitely not me, but I can teach about science!",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Games, Scratch",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "My son really wants to learn to program video games, and my knowledge of coding is minimal. But I'm willing to learn and then teach others as we go on.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos2.meetupstatic.com/photos/member/f/6/6/member_23823942.jpeg",
+                "highres_link": "http://photos2.meetupstatic.com/photos/member/f/6/6/highres_23823942.jpeg",
+                "thumb_link": "http://photos4.meetupstatic.com/photos/member/f/6/6/thumb_23823942.jpeg",
+                "photo_id": 23823942
+            },
+            "member_id": 24988262,
+            "visited": "1370916403000",
+            "bio": "I'm a scientist with a kid who wants to learn code.",
+            "created": "1370568440000",
+            "updated": "1370568440000",
+            "name": "Chris",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "mentor": true,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/12970707/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/1/5/d/1/member_11477585.jpeg",
+            "answers": [
+                {
+                    "answer": "Web",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "N/A",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I live and work in the area, and I like teaching.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos3.meetupstatic.com/photos/member/4/4/b/1/member_11477585.jpeg",
+                "highres_link": "http://photos1.meetupstatic.com/photos/member/4/4/b/1/highres_11477585.jpeg",
+                "thumb_link": "http://photos1.meetupstatic.com/photos/member/4/4/b/1/thumb_11477585.jpeg",
+                "photo_id": 11477585
+            },
+            "member_id": 12970707,
+            "visited": "1370917843000",
+            "bio": "Software generalist focused on web and mobile.",
+            "created": "1368587428000",
+            "updated": "1368587428000",
+            "name": "Andy Lindeman",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "mentor": true,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/67049592/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/d/0/4/member_117843332.jpeg",
+            "answers": [
+                {
+                    "answer": "CSharp, C-language, Python, Java",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I learned how to program when I was 9 and I want to help provide that opportunity to other children.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos3.meetupstatic.com/photos/member/d/0/4/member_117843332.jpeg",
+                "thumb_link": "http://photos1.meetupstatic.com/photos/member/d/0/4/thumb_117843332.jpeg",
+                "photo_id": 117843332
+            },
+            "member_id": 67049592,
+            "visited": "1370919071000",
+            "bio": "I'm a software developer with 6 years of experience. I've worked in Geospatial Imaging, and Network Management fields programming in  CPP, Java, Python, and CSharp.",
+            "created": "1368656260000",
+            "updated": "1368656260000",
+            "name": "Aleksey Vitebskiy",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "visited": "1370919855000",
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/97357922/",
+            "bio": "I am mom to 3 boys. 11, 15 and 18. My two younger children are interested in coding especially, my 15 year old. I am a 48 years old Asian Female. I run my own vacation rental business.",
+            "updated": "1370917748000",
+            "status": "active",
+            "created": "1370917748000",
+            "name": "Veronica",
+            "answers": [
+                {
+                    "answer": "I am not a professional",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Mobile",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I am interested in Coder Dojo because my son is interested to learn how to code",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { },
+            "member_id": 97357922
+        },
+        {
+            "mentor": true,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/3727088/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/a/f/c/member_91148812.jpeg",
+            "answers": [
+                {
+                    "answer": "Python, Linux, TurboGears, Web",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Python",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I have a 6-year old son who loves computers. We have worked on Python together sometimes.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos3.meetupstatic.com/photos/member/2/2/6/c/member_91148812.jpeg",
+                "thumb_link": "http://photos1.meetupstatic.com/photos/member/2/2/6/c/thumb_91148812.jpeg",
+                "photo_id": 91148812
+            },
+            "member_id": 3727088,
+            "visited": "1370921243000",
+            "bio": "I'm a professional software developer, working mostly in Python these days.",
+            "created": "1368577198000",
+            "updated": "1368577198000",
+            "name": "Barry Hart",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/8713330/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/8/b/8/member_67532232.jpeg",
+            "answers": [
+                {
+                    "answer": "n/a",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Python",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "See above",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos2.meetupstatic.com/photos/member/7/d/e/8/member_67532232.jpeg",
+                "thumb_link": "http://photos2.meetupstatic.com/photos/member/7/d/e/8/thumb_67532232.jpeg",
+                "photo_id": 67532232
+            },
+            "member_id": 8713330,
+            "visited": "1370921817000",
+            "bio": "Hi! My name is Lana and I am interested in this group for my son Nicholas who is almost 7 years old. Nicholas is homeschooled and has been really interested in computer programming lately so I think this group would be a great opportunity for him.",
+            "created": "1370950381000",
+            "updated": "1370950381000",
+            "name": "Lana Kravtsova",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "visited": "1370927129000",
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/11507836/",
+            "bio": "I am a busy mom of 5 seeking interesting 'tools' for my children to add to their life 'toolbox'.",
+            "updated": "1370950432000",
+            "status": "active",
+            "created": "1370950432000",
+            "name": "Alisha Brown",
+            "answers": [
+                {
+                    "answer": "I am told (by my children) that I lecture too much so I'll leave this one alone :)",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "Games, Mobile, Python, CSS, Java, Javascript, HTML",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "My boys (11 and 16) have lightly brushed upon Microsoft DreamSpark and Alice but would appreciate a supportive learning environment to assist with troubleshooting.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { },
+            "member_id": 11507836
+        },
+        {
+            "mentor": true,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/3329142/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/c/9/2/member_3345218.jpeg",
+            "answers": [
+                {
+                    "answer": "windows, ubuntu, unix, mac, bash, rails, ruby, c, java, python",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "n/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "Local ATLRUG Giveback Coordinator Interested in encouraging people to help out.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos3.meetupstatic.com/photos/member/b/0/a/2/member_3345218.jpeg",
+                "highres_link": "http://photos1.meetupstatic.com/photos/member/b/0/a/2/highres_3345218.jpeg",
+                "thumb_link": "http://photos1.meetupstatic.com/photos/member/b/0/a/2/thumb_3345218.jpeg",
+                "photo_id": 3345218
+            },
+            "member_id": 3329142,
+            "visited": "1370940247000",
+            "bio": "Rails Legacy Developer",
+            "created": "1370917846000",
+            "updated": "1370917846000",
+            "name": "Al Snow",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "mentor": true,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/2903319/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/2/a/6/member_10842678.jpeg",
+            "answers": [
+                {
+                    "answer": "HTML",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "HTML, javascript",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "My daughter is 11 and interested in gaming.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos1.meetupstatic.com/photos/member/a/6/b/6/member_10842678.jpeg",
+                "highres_link": "http://photos3.meetupstatic.com/photos/member/a/6/b/6/highres_10842678.jpeg",
+                "thumb_link": "http://photos3.meetupstatic.com/photos/member/a/6/b/6/thumb_10842678.jpeg",
+                "photo_id": 10842678
+            },
+            "member_id": 2903319,
+            "visited": "1370952565000",
+            "bio": "Developer",
+            "created": "1370611912000",
+            "updated": "1370611912000",
+            "name": "Ivan",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "mentor": true,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/66556842/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/b/c/e/member_78513022.jpeg",
+            "answers": [
+                {
+                    "answer": "VBA, Python, HTML, CSS",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "N/A",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I enjoy giving back and I think passing on the knowledge of coding and programming is invaluable.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "member_id": 66556842,
+            "visited": "1370953392000",
+            "bio": "I'm a graduate student who just recently became interested in the field of technology and I recognize how important programming skills are. I hope to teach kids the skills I wish I knew 10 years ago!",
+            "updated": "1368621496000",
+            "created": "1368621496000",
+            "name": "Chad Christensen",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "mentor": true,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/97416852/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/5/9/8/member_124261432.jpeg",
+            "answers": [
+                {
+                    "answer": "Robotics,  CPP, hardware, ASP.NET, web",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "N/A",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I am involved in mentoring kids in southwest atlanta and I think this may be a good environment to introduce some of our mentored students to the community of computer programming. ",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos2.meetupstatic.com/photos/member/5/9/8/member_124261432.jpeg",
+                "thumb_link": "http://photos2.meetupstatic.com/photos/member/5/9/8/thumb_124261432.jpeg",
+                "photo_id": 124261432
+            },
+            "member_id": 97416852,
+            "visited": "1370957296000",
+            "bio": "My name is Chris and I've been interested in computers since I was a young child. I started programming in high school. I currently work for NCR in Midtown doing some web development and I have a background in  CPP and hardware.",
+            "created": "1370958467000",
+            "updated": "1370958467000",
+            "name": "Chris Woolfe",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "mentor": true,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/8349240/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/f/4/7/member_9057911.jpeg",
+            "answers": [
+                {
+                    "answer": "VB.NET, Ruby, Rails",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "N/a",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I like volunteering. This sounds exactly like the project I've been looking for. ",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos3.meetupstatic.com/photos/member/e/2/3/7/member_9057911.jpeg",
+                "highres_link": "http://photos1.meetupstatic.com/photos/member/e/2/3/7/highres_9057911.jpeg",
+                "thumb_link": "http://photos1.meetupstatic.com/photos/member/e/2/3/7/thumb_9057911.jpeg",
+                "photo_id": 9057911
+            },
+            "member_id": 8349240,
+            "visited": "1370958783000",
+            "bio": "I am passionate about giving back to the community, especially when I have the opportunity to enrich the education of young people in the area. ",
+            "created": "1370864393000",
+            "updated": "1370864393000",
+            "name": "Randall Reed",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/86802012/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/5/9/8/member_107545432.jpeg",
+            "answers": [
+                {
+                    "answer": "N/A",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "N/A",
+                    "question": "If you are a parent or 18+ guardian of a young person interested in learinng to code, what kind of apps, programs, technologies or languages are you interested in?",
+                    "question_id": 4402182
+                },
+                {
+                    "answer": "I enjoy volunteering in my community.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos3.meetupstatic.com/photos/member/6/3/5/8/member_107545432.jpeg",
+                "thumb_link": "http://photos3.meetupstatic.com/photos/member/6/3/5/8/thumb_107545432.jpeg",
+                "photo_id": 107545432
+            },
+            "member_id": 86802012,
+            "visited": "1370959243000",
+            "bio": "I work at VersionOne!",
+            "created": "1368461251000",
+            "updated": "1368461251000",
+            "name": "Natalie",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        },
+        {
+            "mentor": true,
+            "profile_url": "http://www.meetup.com/CoderDojoPonceSprings/members/7498547/",
+            "status": "active",
+            "photo_url": "http://photos1.meetupstatic.com/photos/member/1/1/5/a/member_94558442.jpeg",
+            "answers": [
+                {
+                    "answer": "Web, NodeJS, JavaScript, CoffeeScript, CSharp, DotNET, MongoDB, SQL, TwitterBootstrap, JQueryMobile, AngularJS, Backbone, Underscore, RequireJS",
+                    "question": "If you are a professional developer/technologist interested in mentoring students on coding, what languages, technologies, platforms, etc do you specialize in?",
+                    "question_id": 4402172
+                },
+                {
+                    "answer": "I have long been active and interested in mentoring and community outreach. Having been a mentor in Big Brothers and Big Sisters before, I had a great time helping my mentee learn programming, so being able to help even more people learn will be awesome.",
+                    "question": "Tell us a bit about yourself? What is your interest in Coder Dojo Ponce Springs?",
+                    "question_id": 4409172
+                }
+            ],
+            "photo": {
+                "photo_link": "http://photos1.meetupstatic.com/photos/member/e/4/4/a/member_94558442.jpeg",
+                "thumb_link": "http://photos1.meetupstatic.com/photos/member/e/4/4/a/thumb_94558442.jpeg",
+                "photo_id": 94558442
+            },
+            "member_id": 7498547,
+            "visited": "1370962339000",
+            "bio": "Developer and Community Evangelist @ VersionOne, Inc.",
+            "created": "1367952982000",
+            "updated": "1368564936000",
+            "name": "Josh Gough",
+            "role": "Co-Organizer",
+            "group": {
+                "id": 8388692,
+                "group_lat": 33.77000045776367,
+                "name": "CoderDojo Ponce Springs",
+                "group_lon": -84.37999725341797,
+                "join_mode": "approval",
+                "urlname": "CoderDojoPonceSprings",
+                "who": "Coders"
+            },
+            "other_services": { }
+        }
+    ],
+    "meta": {
+        "lon": "",
+        "count": 78,
+        "signed_url": "http://api.meetup.com/2/profiles?order=visited&group_urlname=CoderDojoPonceSprings&offset=0&format=json&page=100&sig_id=7498547&sig=2c7722b93c559380f5e2afb427dbcf8a12d74c27",
+        "link": "http://www.meetup.com/2/profiles",
+        "next": "",
+        "total_count": 78,
+        "url": "http://www.meetup.com/2/profiles?order=visited&group_urlname=CoderDojoPonceSprings&offset=0&format=json&page=100&sign=true",
+        "id": "",
+        "title": "Member Profile",
+        "updated": "Tue Jun 11 09:47:47 EDT 2013",
+        "description": "API method for accessing group member profiles",
+        "method": "Profiles",
+        "lat": ""
+    }
+
+}
