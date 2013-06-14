@@ -1,5 +1,4 @@
 express = require 'express'
-_ = require 'underscore'
 
 createServer = ->
   app = express()
