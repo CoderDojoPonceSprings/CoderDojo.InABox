@@ -1,0 +1,136 @@
+<body ng-controller='FormController'>
+  <form class="form-horizontal" ng-submit="submit()">
+<fieldset>
+
+<!-- Form Name -->
+<legend>CoderDojo Ponce Springs Volunteer Signup</legend>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label required" for="email">Email</label>
+  <div class="controls">
+    <input id="email" ng-model="form.email" placeholder="" class="input-xlarge" required type="text">
+    <p class="help-block">user@example.com</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label required" for="firstName">First Name</label>
+  <div class="controls">
+    <input id="firstName" ng-model="form.firstName" placeholder="" class="input-xlarge" required type="text">
+    
+  </div>
+</div>
+
+<div class="control-group">
+  <label class="control-label required" for="lastName">Last Name</label>
+  <div class="controls">
+    <input id="lastName" ng-model="form.lastName" placeholder="" class="input-xlarge" required type="text">    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="company">Company</label>
+  <div class="controls">
+    <input id="company" ng-model="form.company" placeholder="" class="input-xlarge" type="text">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="title">Title</label>
+  <div class="controls">
+    <input id="title" ng-model="form.title" placeholder="" class="input-xlarge" type="text">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="zip">ZIP</label>
+  <div class="controls">
+    <input id="zip" ng-model="form.zip" placeholder="" class="input-xlarge" type="text">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="expertise">Area of expertise</label>
+  <div class="controls">
+    <input id="expertise" ng-model="form.expertise" placeholder="" class="input-xlarge" type="text">
+    <p class="help-block">(e.g. web development, gaming, mobile apps, databases, etc.)</p>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="control-group">
+  <label class="control-label" for="mentorSkills">Skills</label>
+  <div class="controls">
+    <label ng-repeat="skill in mentorSkills">
+      <input
+        name='mentorSkills'
+        type="checkbox"
+        value="{{skill.name}}"
+        ng-checked="skill.checked"
+        ng-model="skill.checked"
+      >
+      <span>{{skill.name}}</span>
+    </label>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="control-group">
+  <label class="control-label" for="other">Other Skills</label>
+  <div class="controls">                     
+    <textarea id="other" ng-model="form.other"></textarea>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="control-group">
+  <label class="control-label" for="kidExperience">Kid Experience</label>
+  <div class="controls">
+    <label class="checkbox" for="kidExperience">
+      <input ng-model="form.kidExperience" value="I have experience working or volunteering with kids ages 7 to 17" type="checkbox">
+      I have experience working or volunteering with kids ages 7 to 17
+    </label>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="control-group">
+  <label class="control-label" for="volunteerOffers">I Can Help By...</label>
+  <div class="controls">
+    <label ng-repeat="skill in volunteerOffers">
+      <input
+        name='volunteerOffers'
+        type="checkbox"
+        value="{{skill.name}}"
+        ng-checked="skill.checked"
+        ng-model="skill.checked"
+      >
+      <span>{{skill.name}}</span>
+    </label>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="control-group">
+  <label class="control-label" for="backgroundCheck">Background Check</label>
+  <div class="controls">
+    <label class="checkbox" for="backgroundCheck">
+      <input ng-model="form.backgroundCheck" name="backgroundCheck" value="I agree to a background check" required type="checkbox">
+      I agree to a background check
+    </label>
+  </div>
+</div>
+
+</fieldset>
+
+<button class='btn btn-primary' type='submit'>Submit</button>
+</form>
