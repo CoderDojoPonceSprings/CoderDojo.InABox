@@ -41,15 +41,8 @@
     }
   ]);
 
-  app.controller("ThankyouController", [
-    '$rootScope', '$scope', function($rootScope, $scope) {
-      $scope.message = "Thank you " + ($rootScope.signup.firstName + ' ' + $rootScope.signup.lastName) + " for submitting the volunteer signup form. We will contact you soon!";
-      return console.log($scope.message);
-    }
-  ]);
-
   app.controller("FormController", [
-    "$rootScope", "$scope", "$location", "Signup", function($rootScope, $scope, $location, Signup) {
+    "$rootScope", "$scope", "$location", "Signup", "$http", function($rootScope, $scope, $location, Signup, $http) {
       $scope.form = {
         email: '',
         firstName: '',
@@ -94,9 +87,20 @@
         $scope.form.volunteerOffers = volunteerOffers;
         return Signup.save($scope.form, function(signup) {
           $rootScope.signup = signup;
+          $http({
+            url: "http://example.appspot.com/rest/app",
+            method: "POST",
+            data: $scope.form
+          });
           return $location.path("/thankyou");
         });
       };
+    }
+  ]);
+
+  app.controller("ThankyouController", [
+    '$rootScope', '$scope', function($rootScope, $scope) {
+      return $scope.message = "Thank you " + ($rootScope.signup.firstName + ' ' + $rootScope.signup.lastName) + " for submitting the volunteer signup form. We will contact you soon!";
     }
   ]);
 

@@ -15,12 +15,7 @@ app.config ['$routeProvider', ($routeProvider) ->
   $routeProvider.otherwise({redirectTo: '/'})
 ]
 
-app.controller "ThankyouController", ['$rootScope', '$scope', ($rootScope, $scope) ->
-  $scope.message = "Thank you #{$rootScope.signup.firstName + ' ' + $rootScope.signup.lastName} for submitting the volunteer signup form. We will contact you soon!"
-  console.log $scope.message
-]
-
-app.controller "FormController", ["$rootScope", "$scope", "$location", "Signup", ($rootScope, $scope, $location, Signup) ->
+app.controller "FormController", ["$rootScope", "$scope", "$location", "Signup", "$http", ($rootScope, $scope, $location, Signup, $http) ->
   $scope.form = 
     email: ''
     firstName: ''
@@ -68,5 +63,14 @@ app.controller "FormController", ["$rootScope", "$scope", "$location", "Signup",
     
     Signup.save $scope.form, (signup) =>
       $rootScope.signup = signup
+      $http({
+        url: "http://example.appspot.com/rest/app",
+        method: "POST",
+        data: $scope.form
+      })
       $location.path("/thankyou")
+]
+
+app.controller "ThankyouController", ['$rootScope', '$scope', ($rootScope, $scope) ->
+  $scope.message = "Thank you #{$rootScope.signup.firstName + ' ' + $rootScope.signup.lastName} for submitting the volunteer signup form. We will contact you soon!"
 ]
