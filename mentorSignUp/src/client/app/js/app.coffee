@@ -59,8 +59,8 @@ app.controller "FormController", ["$rootScope", "$scope", "$location", "Signup",
   $scope.submit = ->
     $scope.form.mentorSkills = selectedItems $scope.mentorSkills
     $scope.form.volunteerOffers = selectedItems $scope.volunteerOffers
-    $scope.form.date = new Date()
-    
+    $scope.form.submitDate = new Date()
+
     html = document.getElementById('message').innerHTML
 
     Signup.save $scope.form, (signup) =>
