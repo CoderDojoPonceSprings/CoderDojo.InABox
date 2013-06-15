@@ -40,8 +40,8 @@
         text: text,
         html: htmlToV1
       });
-      headerText = "Thank you " + req.body.firstName + " " + req.body.lastName + " for volunteering with CoderDojo Ponce Springs! Please fill out the attached background check authorization form and return it to us by following the instructions within it.\n\nHere is a copy of the information you submitted to us:\n\n";
-      headerHtml = "Thank you " + req.body.firstName + " " + req.body.lastName + " for volunteering with CoderDojo Ponce Springs! <b>Please fill out the attached background check authorization form and return it to us by following the instructions within it.</b><br/><br/><hr/><br/>Here is a copy of the information you submitted to us:<br/><br/>";
+      headerText = "" + req.body.firstName + " " + req.body.lastName + ", thanks for volunteering with CoderDojo Ponce Springs! Please fill out the attached background check authorization form and return it to us by following the instructions within it.\n\nHere is a copy of the information you submitted to us:\n\n";
+      headerHtml = "" + req.body.firstName + " " + req.body.lastName + ", thanks for volunteering with CoderDojo Ponce Springs! <b>Please fill out the attached background check authorization form and return it to us by following the instructions within it.</b><br/><br/><hr/><br/>Here is a copy of the information you submitted to us:<br/><br/>";
       text = headerText + signup;
       html = headerHtml + html;
       mailForVolunteer = new sg.Email({
