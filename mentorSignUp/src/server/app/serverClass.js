@@ -20,7 +20,7 @@
       return app.listen(port);
     });
     app.post('/submit', function(req, res) {
-      var from, header, html, mail, mailForVolunteer, sender, signup, text;
+      var from, header, headerHtml, headerText, html, mail, mailForVolunteer, sender, signup, text;
 
       if (req.body == null) {
         return;
@@ -40,9 +40,10 @@
         text: text,
         html: html
       });
-      header = "Thank you " + req.body.firstName + " " + req.body.lastName + " for volunteering with CoderDojo Ponce Springs! Please remember to fill out the attached background check authorization form and return it to us (instructions within document) so you can get started!\n\nHere is a copy of the information you submitted to us:\n\n";
-      text = header + signup;
-      html = header + html;
+      headerText = "Thank you " + req.body.firstName + " " + req.body.lastName + " for volunteering with CoderDojo Ponce Springs! Please fill out the attached background check authorization form and return it to us by following the instructions within it.\n\nHere is a copy of the information you submitted to us:\n\n";
+      headerHtml = "Thank you " + req.body.firstName + " " + req.body.lastName + " for volunteering with CoderDojo Ponce Springs! Please fill out the attached background check authorization form and return it to us by following the instructions within it.<br/><br/>Here is a copy of the information you submitted to us:<br/><br/>";
+      text = headerText + signup;
+      html = headerHtml + html;
       mailForVolunteer = new sg.Email({
         to: req.body.email,
         from: from,
