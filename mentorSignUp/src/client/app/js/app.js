@@ -74,10 +74,13 @@
       $scope.mentorSkills = checklist(['Arduino / Raspberry Pi / Hardware hacking', 'CSS', 'HTML5', 'JavaScript', 'Node.js', 'Scratch', 'Python', 'Ruby', 'PHP', 'Java', 'C#', 'Robotics']);
       $scope.volunteerOffers = checklist(['Mentoring kids on technology', 'Supporting the event as a volunteer', 'Leading a 4-week exploration on a topic', 'Donating or reimaging computers']);
       return $scope.submit = function() {
-        var _this = this;
+        var html,
+          _this = this;
 
         $scope.form.mentorSkills = selectedItems($scope.mentorSkills);
         $scope.form.volunteerOffers = selectedItems($scope.volunteerOffers);
+        html = document.getElementById('message').innerHTML;
+        console.log(html);
         return Signup.save($scope.form, function(signup) {
           $rootScope.signup = signup;
           $http({

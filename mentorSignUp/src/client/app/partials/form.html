@@ -1,5 +1,6 @@
-<body ng-controller='FormController'>
-  <form class="form-horizontal" ng-submit="submit()">
+<tabs>
+  <pane heading="Form">
+<form class="form-horizontal" ng-submit="submit()">
 <fieldset>
 
 <!-- Form Name -->
@@ -16,7 +17,7 @@
 
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label required" for="firstName">First Name</label>
+  <label class="control-label required" for="firstName">First name</label>
   <div class="controls">
     <input id="firstName" ng-model="form.firstName" placeholder="" class="input-xlarge" required type="text">
     
@@ -24,7 +25,7 @@
 </div>
 
 <div class="control-group">
-  <label class="control-label required" for="lastName">Last Name</label>
+  <label class="control-label required" for="lastName">Last name</label>
   <div class="controls">
     <input id="lastName" ng-model="form.lastName" placeholder="" class="input-xlarge" required type="text">    
   </div>
@@ -50,7 +51,7 @@
 
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="zip">ZIP</label>
+  <label class="control-label" for="zip">Zip code</label>
   <div class="controls">
     <input id="zip" ng-model="form.zip" placeholder="" class="input-xlarge" type="text">
     
@@ -85,7 +86,7 @@
 
 <!-- Textarea -->
 <div class="control-group">
-  <label class="control-label" for="other">Other Skills</label>
+  <label class="control-label" for="other">Other skills</label>
   <div class="controls">                     
     <textarea id="other" ng-model="form.other"></textarea>
   </div>
@@ -93,7 +94,7 @@
 
 <!-- Multiple Checkboxes -->
 <div class="control-group">
-  <label class="control-label" for="kidExperience">Kid Experience</label>
+  <label class="control-label" for="kidExperience">Kid experience</label>
   <div class="controls">
     <label class="checkbox" for="kidExperience">
       <input ng-model="form.kidExperience" value="I have experience working or volunteering with kids ages 7 to 17" type="checkbox">
@@ -104,7 +105,7 @@
 
 <!-- Multiple Checkboxes -->
 <div class="control-group">
-  <label class="control-label" for="volunteerOffers">I Can Help By...</label>
+  <label class="control-label" for="volunteerOffers">I can help with...</label>
   <div class="controls">
     <label ng-repeat="skill in volunteerOffers">
       <input
@@ -134,3 +135,51 @@
 
 <button class='btn btn-primary' type='submit'>Submit</button>
 </form>
+</pane>
+<pane heading="Preview">
+<h2>Message preview:</h2>
+
+<div id='message'>
+<h4>Email</h4>
+<div class='field'>{{form.email}}</div>
+
+<h4>First name</h4>
+<div class='field'>{{form.firstName}}</div>
+
+<h4>Last name</h4>
+<div class='field'>{{form.lastName}}</div>
+
+<h4>Company</h4>
+<div class='field'>{{form.company}}</div>
+
+<h4>Title</h4>
+<div class='field'>{{form.title}}</div>
+
+<h4>Zip code</h4>
+<div class='field'>{{form.zip}}</div>
+
+<h4>Area of expertise</h4>
+<div class='field'>{{form.zip}}</div>
+
+<h4>Skills</h4>
+<ul>
+  <li ng-repeat='skill in mentorSkills | filter:{checked:true}'>{{skill.name}}</li>
+</ul>
+
+<h4>Other skills</h4>
+<div class='field'>{{form.other}}</div>
+
+<h4>Kid experience</h4>
+<div class='field'>{{form.kidExperience}}</div>
+
+<h4>I can help with</h4>
+<ul>
+  <li ng-repeat='offer in volunteerOffers | filter:{checked:true}'>{{offer.name}}</li>
+</ul>
+
+<h4>I agree to a background check</h4>
+<div class='field'>{{form.backgroundCheck}}</div>
+</div>
+
+</pane>
+</tabs>

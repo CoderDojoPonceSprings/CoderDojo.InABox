@@ -60,6 +60,9 @@ app.controller "FormController", ["$rootScope", "$scope", "$location", "Signup",
     $scope.form.mentorSkills = selectedItems $scope.mentorSkills
     $scope.form.volunteerOffers = selectedItems $scope.volunteerOffers
     
+    html = document.getElementById('message').innerHTML
+    console.log html
+    
     Signup.save $scope.form, (signup) =>
       $rootScope.signup = signup
       $http
