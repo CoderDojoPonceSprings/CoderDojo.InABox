@@ -64,7 +64,7 @@ app.controller "FormController", ["$rootScope", "$scope", "$location", "Signup",
     Signup.save $scope.form, (signup) =>
       $rootScope.signup = signup
       $http({
-        url: "http://example.appspot.com/rest/app",
+        url: "/submit",
         method: "POST",
         data: $scope.form
       })

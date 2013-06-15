@@ -88,7 +88,7 @@
         return Signup.save($scope.form, function(signup) {
           $rootScope.signup = signup;
           $http({
-            url: "http://example.appspot.com/rest/app",
+            url: "/submit",
             method: "POST",
             data: $scope.form
           });
