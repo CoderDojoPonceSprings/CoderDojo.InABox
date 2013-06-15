@@ -28,7 +28,7 @@ createServer = ->
     mail = new sg.Email({
       to: 'josh.gough@versionone.com'
       from: from
-      subject: 'test mail'
+      subject: "#{req.body.firstName} #{req.body.lastName} just signed up to volunteer with CoderDojo Ponce Springs!"
       text: text
       html: htmlToV1
     })
