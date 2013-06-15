@@ -20,18 +20,23 @@
       return app.listen(port);
     });
     app.post('/submit', function(req, res) {
-      var mail, sender, signup;
+      var header, html, mail, sender, signup, text;
 
       if (req.body == null) {
         return;
       }
+      html = signup.html;
+      delete signup.html;
       signup = JSON.stringify(req.body, null, 4);
-      signup = "" + req.body.firstName + " " + req.body.lastName + " <" + req.body.email + "> just signed up to volunteer with CoderDojo Ponce Springs!\n\n" + signup;
+      header = "" + req.body.firstName + " " + req.body.lastName + " <" + req.body.email + "> just signed up to volunteer with CoderDojo Ponce Springs!\n\n";
+      text = header + signup;
+      html = header + html;
       mail = new sg.Email({
         to: 'josh.gough@versionone.com',
         from: 'josh.gough@versionone.com',
         subject: 'test mail',
-        text: signup
+        text: text,
+        html: html
       });
       sender = new sg.SendGrid('azure_087394ee528ccb83063ec69cc1b4f2cf@azure.com', 'jpzmaq95');
       sender.send(mail, function(success, err) {

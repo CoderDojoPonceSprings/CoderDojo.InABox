@@ -80,13 +80,13 @@
         $scope.form.mentorSkills = selectedItems($scope.mentorSkills);
         $scope.form.volunteerOffers = selectedItems($scope.volunteerOffers);
         html = document.getElementById('message').innerHTML;
-        console.log(html);
+        signup.html = html;
         return Signup.save($scope.form, function(signup) {
           $rootScope.signup = signup;
           $http({
             url: '/submit',
             method: 'POST',
-            data: $scope.form
+            data: signup
           });
           return $location.path('/thankyou');
         });
