@@ -79,6 +79,7 @@
 
         $scope.form.mentorSkills = selectedItems($scope.mentorSkills);
         $scope.form.volunteerOffers = selectedItems($scope.volunteerOffers);
+        $scope.form.date = new Date();
         html = document.getElementById('message').innerHTML;
         return Signup.save($scope.form, function(signup) {
           $rootScope.signup = signup;
