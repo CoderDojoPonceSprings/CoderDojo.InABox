@@ -21,7 +21,7 @@ createServer = ->
     signup = JSON.stringify signup, null, 4
     header = "#{req.body.firstName} #{req.body.lastName} <#{req.body.email}> just signed up to volunteer with CoderDojo Ponce Springs!\n\n"
     text = header + signup
-    html = header + html
+    htmlToV1 = header + html
 
     from = 'josh.gough@versionone.com'
 
@@ -30,11 +30,11 @@ createServer = ->
       from: from
       subject: 'test mail'
       text: text
-      html: html
+      html: htmlToV1
     })
 
     headerText = "Thank you #{req.body.firstName} #{req.body.lastName} for volunteering with CoderDojo Ponce Springs! Please fill out the attached background check authorization form and return it to us by following the instructions within it.\n\nHere is a copy of the information you submitted to us:\n\n"
-    headerHtml = "<p>Thank you #{req.body.firstName} #{req.body.lastName} for volunteering with CoderDojo Ponce Springs! Please fill out the attached background check authorization form and return it to us by following the instructions within it.</p><p>Here is a copy of the information you submitted to us:</p><hr/>"
+    headerHtml = "<p>Thank you #{req.body.firstName} #{req.body.lastName} for volunteering with CoderDojo Ponce Springs! Please fill out the attached background check authorization form and return it to us by following the instructions within it.</p><p><hr/>Here is a copy of the information you submitted to us:</p><br/>"
     text = headerText + signup 
     html = headerHtml + html
 
