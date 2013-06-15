@@ -16,6 +16,7 @@ createServer = ->
   app.post '/submit', (req, res) ->
     return unless req.body?
     signup = JSON.stringify req.body, null, 4
+    signup = "#{req.body.firstName} #{req.body.lastName} <#{req.body.email}> just signed up to volunteer with CoderDojo Ponce Springs!\n\n#{signup}"
     mail = new sg.Email({
       to: 'josh.gough@versionone.com'
       from: 'josh.gough@versionone.com'
