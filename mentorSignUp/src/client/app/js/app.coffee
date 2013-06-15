@@ -7,6 +7,12 @@ checklist = (items) ->
     ) for item in items)
   return skills
 
+selectedItems = (items) ->
+  selected = []
+  for item in items
+    if item.checked then selected.push { name: item.name, id: item.id }
+  return selected
+
 app = angular.module("mentorSignUp", ["ui.bootstrap", "mongolab"])
 
 app.config ['$routeProvider', ($routeProvider) ->
@@ -51,24 +57,16 @@ app.controller "FormController", ["$rootScope", "$scope", "$location", "Signup",
   ]
 
   $scope.submit = ->
-    mentorSkills = []
-    for skill in $scope.mentorSkills
-      if skill.checked then mentorSkills.push { name: skill.name, id: skill.id }
-    $scope.form.mentorSkills = mentorSkills
-    volunteerOffers = []
-
-    for skill in $scope.volunteerOffers
-      if skill.checked then volunteerOffers.push { name: skill.name, id: skill.id }    
-    $scope.form.volunteerOffers = volunteerOffers
+    $scope.form.mentorSkills = selectedItems $scope.mentorSkills
+    $scope.form.volunteerOffers = selectedItems $scope.volunteerOffers
     
     Signup.save $scope.form, (signup) =>
       $rootScope.signup = signup
-      $http({
-        url: "/submit",
-        method: "POST",
+      $http
+        url: '/submit',
+        method: 'POST',
         data: $scope.form
-      })
-      $location.path("/thankyou")
+      $location.path('/thankyou')
 ]
 
 app.controller "ThankyouController", ['$rootScope', '$scope', ($rootScope, $scope) ->
