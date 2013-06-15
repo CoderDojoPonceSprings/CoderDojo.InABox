@@ -20,21 +20,33 @@
       return app.listen(port);
     });
     app.post('/submit', function(req, res) {
-      var header, html, mail, sender, signup, text;
+      var from, header, html, mail, mailForVolunteer, sender, signup, text;
 
       if (req.body == null) {
         return;
       }
+      signup = req.body;
       html = signup.html;
       delete signup.html;
-      signup = JSON.stringify(req.body, null, 4);
+      signup = JSON.stringify(signup, null, 4);
       header = "" + req.body.firstName + " " + req.body.lastName + " <" + req.body.email + "> just signed up to volunteer with CoderDojo Ponce Springs!\n\n";
       text = header + signup;
       html = header + html;
+      from = 'josh.gough@versionone.com';
       mail = new sg.Email({
         to: 'josh.gough@versionone.com',
-        from: 'josh.gough@versionone.com',
+        from: from,
         subject: 'test mail',
+        text: text,
+        html: html
+      });
+      header = "Thank you " + req.body.firstName + " " + req.body.lastName + " for volunteering with CoderDojo Ponce Springs! Please fill out the background check form and call us when you have done so so you can get started!\n\nHere is a copy of the information you sent us:\n\n";
+      text = header + signup;
+      html = header + html;
+      mailForVolunteer = new sg.Email({
+        to: req.body.email,
+        from: from,
+        subject: 'Confirmation of CoderDojo Ponce Springs sign up received',
         text: text,
         html: html
       });
@@ -42,6 +54,13 @@
       sender.send(mail, function(success, err) {
         if (success) {
           return console.log('Email sent');
+        } else {
+          return console.log(err);
+        }
+      });
+      sender.send(mailForVolunteer, function(success, err) {
+        if (success) {
+          return console.log('Email sent to volunteer');
         } else {
           return console.log(err);
         }

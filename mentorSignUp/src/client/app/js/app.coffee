@@ -61,10 +61,10 @@ app.controller "FormController", ["$rootScope", "$scope", "$location", "Signup",
     $scope.form.volunteerOffers = selectedItems $scope.volunteerOffers
     
     html = document.getElementById('message').innerHTML
-    signup.html = html
 
     Signup.save $scope.form, (signup) =>
       $rootScope.signup = signup
+      signup.html = html
       $http
         url: '/submit',
         method: 'POST',
