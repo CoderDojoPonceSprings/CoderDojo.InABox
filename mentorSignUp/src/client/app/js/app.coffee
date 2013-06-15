@@ -73,5 +73,5 @@ app.controller "FormController", ["$rootScope", "$scope", "$location", "Signup",
 ]
 
 app.controller "ThankyouController", ['$rootScope', '$scope', ($rootScope, $scope) ->
-  $scope.name = "#{$rootScope.signup.firstName} #{$rootScope.signup.lastName}"
+  $scope.name = "#{$rootScope.signup.firstName}"
 ]

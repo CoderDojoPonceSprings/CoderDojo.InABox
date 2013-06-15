@@ -96,7 +96,7 @@
 
   app.controller("ThankyouController", [
     '$rootScope', '$scope', function($rootScope, $scope) {
-      return $scope.name = "" + $rootScope.signup.firstName + " " + $rootScope.signup.lastName;
+      return $scope.name = "" + $rootScope.signup.firstName;
     }
   ]);
 
