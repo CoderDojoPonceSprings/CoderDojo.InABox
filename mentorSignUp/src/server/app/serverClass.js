@@ -48,7 +48,10 @@
         from: from,
         subject: 'Confirmation of CoderDojo Ponce Springs sign up received',
         text: text,
-        html: html
+        html: html,
+        files: {
+          'CoderDojoPonceSprings-BackgroundCheckAuthorization.pdf': __dirname + '/../../client/app/content/CoderDojoPonceSprings-BackgroundCheckAuthorization.pdf'
+        }
       });
       sender = new sg.SendGrid('azure_087394ee528ccb83063ec69cc1b4f2cf@azure.com', 'jpzmaq95');
       sender.send(mail, function(success, err) {
