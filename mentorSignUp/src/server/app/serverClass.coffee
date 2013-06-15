@@ -34,7 +34,7 @@ createServer = ->
     })
 
     headerText = "Thank you #{req.body.firstName} #{req.body.lastName} for volunteering with CoderDojo Ponce Springs! Please fill out the attached background check authorization form and return it to us by following the instructions within it.\n\nHere is a copy of the information you submitted to us:\n\n"
-    headerHtml = "Thank you #{req.body.firstName} #{req.body.lastName} for volunteering with CoderDojo Ponce Springs! Please fill out the attached background check authorization form and return it to us by following the instructions within it.<br/><br/>Here is a copy of the information you submitted to us:<br/><br/>"
+    headerHtml = "<p>Thank you #{req.body.firstName} #{req.body.lastName} for volunteering with CoderDojo Ponce Springs! Please fill out the attached background check authorization form and return it to us by following the instructions within it.</p><p>Here is a copy of the information you submitted to us:</p><hr/>"
     text = headerText + signup 
     html = headerHtml + html
 
