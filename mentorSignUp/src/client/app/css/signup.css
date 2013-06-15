@@ -1,0 +1,17 @@
+/* app css stylesheet */
+
+body {
+  margin: 10px;
+}
+
+.required {
+  font-weight: bold;
+}
+
+.btn {
+  margin-top: .5em;
+}
+
+.btn span {
+  vertical-align: middle;
+}

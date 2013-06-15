@@ -96,7 +96,7 @@
 
   app.controller("ThankyouController", [
     '$rootScope', '$scope', function($rootScope, $scope) {
-      return $scope.message = "Thank you " + ($rootScope.signup.firstName + ' ' + $rootScope.signup.lastName) + " for submitting the volunteer signup form. We will contact you soon!";
+      return $scope.name = "" + $rootScope.signup.firstName + " " + $rootScope.signup.lastName;
     }
   ]);
 

@@ -73,5 +73,5 @@ app.controller "FormController", ["$rootScope", "$scope", "$location", "Signup",
 ]
 
 app.controller "ThankyouController", ['$rootScope', '$scope', ($rootScope, $scope) ->
-  $scope.message = "Thank you #{$rootScope.signup.firstName + ' ' + $rootScope.signup.lastName} for submitting the volunteer signup form. We will contact you soon!"
+  $scope.name = "#{$rootScope.signup.firstName} #{$rootScope.signup.lastName}"
 ]

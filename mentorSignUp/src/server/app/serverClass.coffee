@@ -33,8 +33,8 @@ createServer = ->
       html: html
     })
 
-    header = "Thank you #{req.body.firstName} #{req.body.lastName} for volunteering with CoderDojo Ponce Springs! Please fill out the background check form and call us when you have done so so you can get started!\n\nHere is a copy of the information you sent us:\n\n"
-    text = header + signup
+    header = "Thank you #{req.body.firstName} #{req.body.lastName} for volunteering with CoderDojo Ponce Springs! Please remember to fill out the attached background check authorization form and return it to us (instructions within document) so you can get started!\n\nHere is a copy of the information you submitted to us:\n\n"
+    text = header + signup 
     html = header + html
 
     mailForVolunteer = new sg.Email({
@@ -43,6 +43,8 @@ createServer = ->
       subject: 'Confirmation of CoderDojo Ponce Springs sign up received'
       text: text
       html: html
+      files:
+        'CoderDojoPonceSprings-BackgroundCheckAuthorization.pdf': __dirname + '../../client/app/content/CoderDojoPonceSprings-BackgroundCheckAuthorization.pdf'
     })
 
     sender = new sg.SendGrid 'azure_087394ee528ccb83063ec69cc1b4f2cf@azure.com', 'jpzmaq95'

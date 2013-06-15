@@ -1,10 +1,11 @@
+<h1>CoderDojo Ponce Springs Volunteer Signup</h1>
+
+<p>Please fill out the form below to volunteer as a mentor or in another capacity. You can preview your message by clicking the <b>Preview</b> tab.</p>
+
 <tabs>
   <pane heading="Form">
 <form class="form-horizontal" ng-submit="submit()">
 <fieldset>
-
-<!-- Form Name -->
-<legend>CoderDojo Ponce Springs Volunteer Signup</legend>
 
 <!-- Text input-->
 <div class="control-group">
@@ -131,14 +132,17 @@
   </div>
 </div>
 
-</fieldset>
+<button class='btn btn-primary' type='submit'>Send</button>
 
-<button class='btn btn-primary' type='submit'>Submit</button>
+</fieldset>
 </form>
+
 </pane>
 <pane heading="Preview">
-<h2>Message preview:</h2>
-
+<h3>Message preview</h3>
+The following message will be emailed to us and sent to you for reference. Click the <b>Form</b> tab to modify or send it.
+<br/>
+<br/>
 <div id='message'>
 <h4>Email</h4>
 <div class='field'>{{form.email}}</div>
