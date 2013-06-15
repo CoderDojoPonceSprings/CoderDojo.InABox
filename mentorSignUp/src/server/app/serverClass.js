@@ -26,6 +26,7 @@
         return;
       }
       signup = req.body;
+      signup.date = new Date();
       html = signup.html;
       delete signup.html;
       signup = JSON.stringify(signup, null, 4);
