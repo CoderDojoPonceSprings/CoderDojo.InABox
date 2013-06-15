@@ -23,10 +23,10 @@ createServer = ->
     html = header + html
 
     mail = new sg.Email({
-      to: 'josh.gough@versionone.com'
-      from: 'josh.gough@versionone.com'
+      to: 'josh.gough@versionone.com',
+      from: 'josh.gough@versionone.com',
       subject: 'test mail',
-      text: text
+      text: text,
       html: html
     })
     sender = new sg.SendGrid 'azure_087394ee528ccb83063ec69cc1b4f2cf@azure.com', 'jpzmaq95'
