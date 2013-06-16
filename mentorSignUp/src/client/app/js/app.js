@@ -3,23 +3,18 @@
   var app, checklist, selectedItems;
 
   checklist = function(items) {
-    var id, item, skills;
+    var id, item, skills, _i, _len;
 
     id = 0;
-    skills = (function() {
-      var _i, _len, _results;
-
-      _results = [];
-      for (_i = 0, _len = items.length; _i < _len; _i++) {
-        item = items[_i];
-        _results.push({
-          name: item,
-          id: id++,
-          checked: false
-        });
-      }
-      return _results;
-    })();
+    skills = [];
+    for (_i = 0, _len = items.length; _i < _len; _i++) {
+      item = items[_i];
+      skills.push({
+        name: item,
+        id: id++,
+        checked: false
+      });
+    }
     return skills;
   };
 

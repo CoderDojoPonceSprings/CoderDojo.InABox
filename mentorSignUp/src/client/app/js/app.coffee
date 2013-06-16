@@ -1,10 +1,12 @@
 checklist = (items) ->
   id = 0
-  skills = ((
+  skills = []
+  for item in items
+    skills.push {
       name: item
       id: id++
       checked: false
-    ) for item in items)
+    }
   return skills
 
 selectedItems = (items) ->
@@ -21,7 +23,8 @@ app.config ['$routeProvider', ($routeProvider) ->
   $routeProvider.otherwise({redirectTo: '/'})
 ]
 
-app.controller 'FormController', ['$rootScope', '$scope', '$location', 'Signup', '$http', ($rootScope, $scope, $location, Signup, $http) ->
+app.controller 'FormController', ['$rootScope', '$scope', '$location', 'Signup', '$http',
+($rootScope, $scope, $location, Signup, $http) ->
   $scope.form = 
     email: ''
     firstName: ''
@@ -50,19 +53,19 @@ app.controller 'FormController', ['$rootScope', '$scope', '$location', 'Signup',
     'Robotics'
   ]
 
-  $scope.form.additionalSkill = ''
+  $scope.additionalSkill = ''
   $scope.additionalSkills = []
 
   $scope.additionalSkillAdd = ->
-    return if $scope.form.additionalSkill is ''
-    $scope.additionalSkills.push {name: $scope.form.additionalSkill, checked: true}
-    $scope.form.additionalSkill = ''
+    return if $scope.additionalSkill is ''
+    $scope.additionalSkills.push {name: $scope.additionalSkill, checked: true}
+    $scope.additionalSkill = ''
   
   $scope.additionalSkillRemove = (index) ->
     $scope.additionalSkills.splice index, 1
 
   $scope.additionalSkillAddDisabled = ->
-    return $scope.form.additionalSkill is ''
+    return $scope.additionalSkill is ''
 
   $scope.volunteerOffers = checklist [
     'Mentoring kids on technology'
@@ -95,7 +98,6 @@ app.controller 'FormController', ['$rootScope', '$scope', '$location', 'Signup',
     $scope.form.mentorSkills = selectedItems $scope.mentorSkills
     $scope.form.volunteerOffers = selectedItems $scope.volunteerOffers
     $scope.form.submitDate = new Date()
-    delete $scope.form.additionalSkill
     $scope.form.additionalSkills = $scope.additionalSkills
 
     html = document.getElementById('message').innerHTML
