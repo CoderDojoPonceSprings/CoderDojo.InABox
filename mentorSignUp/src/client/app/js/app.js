@@ -39,7 +39,7 @@
     return selected;
   };
 
-  app = angular.module("mentorSignUp", ["ui.bootstrap", "mongolab"]);
+  app = angular.module('mentorSignUp', ['ui.bootstrap', 'mongolab']);
 
   app.config([
     '$routeProvider', function($routeProvider) {
@@ -57,8 +57,8 @@
     }
   ]);
 
-  app.controller("FormController", [
-    "$rootScope", "$scope", "$location", "Signup", "$http", function($rootScope, $scope, $location, Signup, $http) {
+  app.controller('FormController', [
+    '$rootScope', '$scope', '$location', 'Signup', '$http', function($rootScope, $scope, $location, Signup, $http) {
       $scope.form = {
         email: '',
         firstName: '',
@@ -67,12 +67,25 @@
         title: '',
         zip: '',
         expertise: '',
-        otherSkills: '',
+        other: '',
         kidExperience: false,
         backgroundCheck: false
       };
       $scope.mentorSkills = checklist(['Arduino / Raspberry Pi / Hardware hacking', 'CSS', 'HTML5', 'JavaScript', 'Node.js', 'Scratch', 'Python', 'Ruby', 'PHP', 'Java', 'C#', 'Robotics']);
-      $scope.volunteerOffers = checklist(['Mentoring kids on technology', 'Supporting the event as a volunteer', 'Leading a 4-week exploration on a topic', 'Donating or reimaging computers']);
+      $scope.form.additionalSkill = '';
+      $scope.additionalSkills = [];
+      $scope.additionalSkillAdd = function() {
+        console.log($scope.form.additionalSkill);
+        return $scope.additionalSkills.push({
+          name: $scope.form.additionalSkill,
+          checked: true
+        });
+      };
+      $scope.additionalSkillRemove = function(index) {
+        return $scope.additionalSkills.splice(index, 1);
+      };
+      $scope.volunteerOffers = checklist(['Mentoring kids on technology', 'Leading a 4-week exploration on a topic', 'Donating or reimaging computers', 'Reaching out to local schools to tell them about CoderDojo Ponce Springs', 'Supporting events as a volunteer']);
+      $scope.availability = checklist(['Sat June 29, 2 - 5 PM', 'Sat July 14, 2 - 5 PM', 'Sat July 28, 2 - 5 PM', 'Sat August 10, 2 - 5 PM', 'Sat August 24, 2 - 5 PM']);
       return $scope.submit = function() {
         var html,
           _this = this;
@@ -80,6 +93,8 @@
         $scope.form.mentorSkills = selectedItems($scope.mentorSkills);
         $scope.form.volunteerOffers = selectedItems($scope.volunteerOffers);
         $scope.form.submitDate = new Date();
+        delete $scope.form.additionalSkill;
+        $scope.form.additionalSkills = additionalSkills;
         html = document.getElementById('message').innerHTML;
         return Signup.save($scope.form, function(signup) {
           $rootScope.signup = signup;
@@ -95,7 +110,7 @@
     }
   ]);
 
-  app.controller("ThankyouController", [
+  app.controller('ThankyouController', [
     '$rootScope', '$scope', function($rootScope, $scope) {
       return $scope.name = "" + $rootScope.signup.firstName;
     }

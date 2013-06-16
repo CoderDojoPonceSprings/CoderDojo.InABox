@@ -13,7 +13,7 @@ selectedItems = (items) ->
     if item.checked then selected.push { name: item.name, id: item.id }
   return selected
 
-app = angular.module("mentorSignUp", ["ui.bootstrap", "mongolab"])
+app = angular.module('mentorSignUp', ['ui.bootstrap', 'mongolab'])
 
 app.config ['$routeProvider', ($routeProvider) ->
   $routeProvider.when('/', {templateUrl: 'partials/form.html', controller: 'FormController'})
@@ -21,7 +21,7 @@ app.config ['$routeProvider', ($routeProvider) ->
   $routeProvider.otherwise({redirectTo: '/'})
 ]
 
-app.controller "FormController", ["$rootScope", "$scope", "$location", "Signup", "$http", ($rootScope, $scope, $location, Signup, $http) ->
+app.controller 'FormController', ['$rootScope', '$scope', '$location', 'Signup', '$http', ($rootScope, $scope, $location, Signup, $http) ->
   $scope.form = 
     email: ''
     firstName: ''
@@ -30,7 +30,7 @@ app.controller "FormController", ["$rootScope", "$scope", "$location", "Signup",
     title: ''
     zip: ''
     expertise: ''
-    otherSkills: ''
+    other: ''
     kidExperience: false
     backgroundCheck: false    
 
@@ -46,20 +46,41 @@ app.controller "FormController", ["$rootScope", "$scope", "$location", "Signup",
     'PHP'
     'Java'
     'C#'
-    'Robotics'    
+    'Robotics'
   ]
+
+  $scope.form.additionalSkill = ''
+  $scope.additionalSkills = []
+
+  $scope.additionalSkillAdd = ->
+    console.log $scope.form.additionalSkill
+    $scope.additionalSkills.push {name: $scope.form.additionalSkill, checked: true}
+  
+  $scope.additionalSkillRemove = (index) ->
+    $scope.additionalSkills.splice index, 1
 
   $scope.volunteerOffers = checklist [
     'Mentoring kids on technology'
-    'Supporting the event as a volunteer'
     'Leading a 4-week exploration on a topic'
     'Donating or reimaging computers'
+    'Reaching out to local schools to tell them about CoderDojo Ponce Springs'
+    'Supporting events as a volunteer'    
+  ]
+
+  $scope.availability = checklist [
+    'Sat June 29, 2 - 5 PM'
+    'Sat July 14, 2 - 5 PM'
+    'Sat July 28, 2 - 5 PM'
+    'Sat August 10, 2 - 5 PM'
+    'Sat August 24, 2 - 5 PM'
   ]
 
   $scope.submit = ->
     $scope.form.mentorSkills = selectedItems $scope.mentorSkills
     $scope.form.volunteerOffers = selectedItems $scope.volunteerOffers
     $scope.form.submitDate = new Date()
+    delete $scope.form.additionalSkill
+    $scope.form.additionalSkills = additionalSkills
 
     html = document.getElementById('message').innerHTML
 
@@ -73,6 +94,6 @@ app.controller "FormController", ["$rootScope", "$scope", "$location", "Signup",
       $location.path('/thankyou')
 ]
 
-app.controller "ThankyouController", ['$rootScope', '$scope', ($rootScope, $scope) ->
+app.controller 'ThankyouController', ['$rootScope', '$scope', ($rootScope, $scope) ->
   $scope.name = "#{$rootScope.signup.firstName}"
 ]
