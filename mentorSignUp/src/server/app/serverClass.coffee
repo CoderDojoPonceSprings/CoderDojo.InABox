@@ -23,11 +23,11 @@ createServer = ->
     text = header + signup
     htmlToV1 = header + html
 
-    from = 'josh.gough@versionone.com'
+    from = 'coderdojo@versionone.com'
 
     mail = new sg.Email({
-      to: 'josh.gough@versionone.com'
-      from: from
+      to: 'coderdojo@versionone.com'
+      from: req.body.email
       subject: "#{req.body.firstName} #{req.body.lastName} just signed up to volunteer with CoderDojo Ponce Springs!"
       text: text
       html: htmlToV1
