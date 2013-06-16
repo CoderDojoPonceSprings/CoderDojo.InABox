@@ -80,7 +80,7 @@ app.controller 'FormController', ['$rootScope', '$scope', '$location', 'Signup',
     $scope.form.volunteerOffers = selectedItems $scope.volunteerOffers
     $scope.form.submitDate = new Date()
     delete $scope.form.additionalSkill
-    $scope.form.additionalSkills = additionalSkills
+    $scope.form.additionalSkills = $scope.additionalSkills
 
     html = document.getElementById('message').innerHTML
 
