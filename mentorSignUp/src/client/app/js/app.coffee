@@ -70,8 +70,8 @@ app.controller 'FormController', ['$rootScope', '$scope', '$location', 'Signup',
 
   $scope.availability = checklist [
     'Sat June 29, 2 - 5 PM'
-    'Sat July 14, 2 - 5 PM'
-    'Sat July 28, 2 - 5 PM'
+    'Sat July 13, 2 - 5 PM'
+    'Sat July 27, 2 - 5 PM'
     'Sat August 10, 2 - 5 PM'
     'Sat August 24, 2 - 5 PM'
   ]
