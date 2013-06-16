@@ -69,6 +69,7 @@
         expertise: '',
         other: '',
         kidExperience: false,
+        tshirtSize: 'Medium',
         backgroundCheck: false
       };
       $scope.mentorSkills = checklist(['Arduino / Raspberry Pi / Hardware hacking', 'CSS', 'HTML5', 'JavaScript', 'Node.js', 'Scratch', 'Python', 'Ruby', 'PHP', 'Java', 'C#', 'Robotics']);
@@ -86,6 +87,10 @@
       };
       $scope.volunteerOffers = checklist(['Mentoring kids on technology', 'Leading a 4-week exploration on a topic', 'Donating or reimaging computers', 'Reaching out to local schools to tell them about CoderDojo Ponce Springs', 'Supporting events as a volunteer']);
       $scope.availability = checklist(['Sat June 29, 2 - 5 PM', 'Sat July 14, 2 - 5 PM', 'Sat July 28, 2 - 5 PM', 'Sat August 10, 2 - 5 PM', 'Sat August 24, 2 - 5 PM']);
+      $scope.tshirtSizes = ['Small', 'Medium', 'Large', 'X-Large', 'XX-Large'];
+      $scope.tshirtSizeSelect = function(tshirtSize) {
+        return $scope.form.tshirtSize = tshirtSize;
+      };
       return $scope.submit = function() {
         var html,
           _this = this;

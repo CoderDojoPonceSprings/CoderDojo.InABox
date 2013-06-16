@@ -32,6 +32,7 @@ app.controller 'FormController', ['$rootScope', '$scope', '$location', 'Signup',
     expertise: ''
     other: ''
     kidExperience: false
+    tshirtSize: 'Medium'
     backgroundCheck: false    
 
   $scope.mentorSkills = checklist [
@@ -74,6 +75,17 @@ app.controller 'FormController', ['$rootScope', '$scope', '$location', 'Signup',
     'Sat August 10, 2 - 5 PM'
     'Sat August 24, 2 - 5 PM'
   ]
+
+  $scope.tshirtSizes = [
+    'Small'
+    'Medium'
+    'Large'
+    'X-Large'
+    'XX-Large'
+  ]
+
+  $scope.tshirtSizeSelect = (tshirtSize) ->
+    $scope.form.tshirtSize = tshirtSize
 
   $scope.submit = ->
     $scope.form.mentorSkills = selectedItems $scope.mentorSkills

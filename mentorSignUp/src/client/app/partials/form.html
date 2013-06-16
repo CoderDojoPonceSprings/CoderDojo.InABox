@@ -139,6 +139,20 @@
 </div>
 
 <div class="control-group">
+  <label class="control-label" for="tshirtSize">T-shirt Size</label>
+  <div class="controls">
+    <div class="dropdown">
+      <span>{{form.tshirtSize}}</span> <a class="btn dropdown-toggle">Change T-shirt size</a>
+      <ul class="dropdown-menu">
+        <li ng-repeat="tshirtSize in tshirtSizes">
+          <a ng-click='tshirtSizeSelect(tshirtSize)'>{{tshirtSize}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="control-group">
   <label class="control-label" for="backgroundCheck">Background Check</label>
   <div class="controls">
     <label class="checkbox" for="backgroundCheck">
@@ -149,6 +163,11 @@
 </div>
 
 <button class='btn btn-primary' type='submit'>Send</button>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 </fieldset>
 </form>
@@ -225,6 +244,9 @@ The following message will be emailed to us and sent to you for reference. Click
     <li ng-repeat='slot in availability | filter:{checked:true}'>{{slot.name}}</li>
   </ul>
 </div>
+
+<h4>T-shirt size</h4>
+<div class='field'>{{form.tshirtSize}}</div>
 
 <h4>I agree to a background check</h4>
 <div class='field'>{{form.backgroundCheck}}</div>
