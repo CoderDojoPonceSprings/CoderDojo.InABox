@@ -76,14 +76,20 @@
       $scope.form.additionalSkill = '';
       $scope.additionalSkills = [];
       $scope.additionalSkillAdd = function() {
-        console.log($scope.form.additionalSkill);
-        return $scope.additionalSkills.push({
+        if ($scope.form.additionalSkill === '') {
+          return;
+        }
+        $scope.additionalSkills.push({
           name: $scope.form.additionalSkill,
           checked: true
         });
+        return $scope.form.additionalSkill = '';
       };
       $scope.additionalSkillRemove = function(index) {
         return $scope.additionalSkills.splice(index, 1);
+      };
+      $scope.additionalSkillAddDisabled = function() {
+        return $scope.form.additionalSkill === '';
       };
       $scope.volunteerOffers = checklist(['Mentoring kids on technology', 'Leading a 4-week exploration on a topic', 'Donating or reimaging computers', 'Reaching out to local schools to tell them about CoderDojo Ponce Springs', 'Supporting events as a volunteer']);
       $scope.availability = checklist(['Sat June 29, 2 - 5 PM', 'Sat July 13, 2 - 5 PM', 'Sat July 27, 2 - 5 PM', 'Sat August 10, 2 - 5 PM', 'Sat August 24, 2 - 5 PM']);
