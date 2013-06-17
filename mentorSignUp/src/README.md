@@ -11,7 +11,7 @@ files.
 
 The company I work for, VersionOne, is sponsoring a new CoderDojo in Atlanta. TODO: complete
 
-# HTML to capture user's email
+# Two-way databinding for HTML form fields makes manual DOM manipulation history
 
 ```html
 <div class="control-group">
@@ -24,6 +24,17 @@ The company I work for, VersionOne, is sponsoring a new CoderDojo in Atlanta. TO
 ```
 Notice that the `input` tag does not have an `id` attribute, but does have an `ng-model` attribute set to 
 `form.email`.
+
+Over on the `Preview` tab, we also have this:
+
+```html
+<h4>Email</h4>
+<div class='field'>{{form.email}}</div>
+```
+
+The cool thing about this is that as soon as you start typing into the `input` tag in the `Form` tab, the 
+value gets reflected into the `div` on the `Preview` tab! AngularJS's two-way databinding takes care of this 
+automatically for you.
 
 
 
