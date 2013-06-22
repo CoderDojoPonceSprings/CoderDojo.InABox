@@ -54,7 +54,7 @@ app.controller 'FormController', ['$rootScope', '$scope', '$location', 'Signup',
     'Robotics'
   ]
 
-  $scope.additionalSkill = { value: '' }
+  $scope.additionalSkill = value: ''
   $scope.additionalSkills = []
 
   $scope.additionalSkillAdd = ->
@@ -62,13 +62,9 @@ app.controller 'FormController', ['$rootScope', '$scope', '$location', 'Signup',
     $scope.additionalSkills.push {name: $scope.additionalSkill.value, checked: true}
     $scope.additionalSkill.value = ''
   
-  $scope.additionalSkillRemove = (index) ->
-    $scope.additionalSkills.splice index, 1
+  $scope.additionalSkillRemove = (index) -> $scope.additionalSkills.splice index, 1
 
-  $scope.additionalSkillAddDisabled = ->
-    isEmpty = $scope.additionalSkill.value is ''
-    console.log $scope.additionalSkill.value
-    return isEmpty
+  $scope.additionalSkillAddDisabled = -> $scope.additionalSkill.value is ''
 
   $scope.volunteerOffers = checklist [
     'Mentoring kids on technology'
