@@ -79,7 +79,7 @@
 <div class='control-group'>
   <label class='control-label' for='additional'>Additional skills</label>
   <div class="controls" style='margin-bottom: 5px'>
-    <input ng-model='additionalSkill' type='text' /> <a class='btn' ng-click='additionalSkillAdd()' style='margin-top:-2px' ng-disabled='additionalSkillAddDisabled()'>Add</a>
+    <input ng-model='additionalSkill.value' type='text' /> <a class='btn' ng-click='additionalSkillAdd()' style='margin-top:-2px' ng-disabled='additionalSkillAddDisabled()'>Add</a>
     <div>
       <div ng-repeat='skill in additionalSkills' style='padding-top: 2px; padding-bot:2px'><span class='label label-info'>{{skill.name}}</span>&nbsp;<span class='badge badge-important' ng-click='additionalSkillRemove($index)'>X</span>
     </div>

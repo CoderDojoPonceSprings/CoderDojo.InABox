@@ -72,23 +72,25 @@
         backgroundCheck: false
       };
       $scope.mentorSkills = checklist(['Arduino / Raspberry Pi / Hardware hacking', 'CSS', 'HTML5', 'JavaScript', 'Node.js', 'Scratch', 'Python', 'Ruby', 'PHP', 'Java', 'C#', 'Robotics']);
-      $scope.additionalSkill = '';
+      $scope.additionalSkill = {
+        value: ''
+      };
       $scope.additionalSkills = [];
       $scope.additionalSkillAdd = function() {
-        if ($scope.additionalSkill === '') {
+        if ($scope.additionalSkill.value === '') {
           return;
         }
         $scope.additionalSkills.push({
-          name: $scope.additionalSkill,
+          name: $scope.additionalSkill.value,
           checked: true
         });
-        return $scope.additionalSkill = '';
+        return $scope.additionalSkill.value = '';
       };
       $scope.additionalSkillRemove = function(index) {
         return $scope.additionalSkills.splice(index, 1);
       };
       $scope.additionalSkillAddDisabled = function() {
-        return $scope.additionalSkill === '';
+        return $scope.additionalSkill.value === '';
       };
       $scope.volunteerOffers = checklist(['Mentoring kids on technology', 'Leading a 4-week exploration on a topic', 'Donating or reimaging computers', 'Reaching out to local schools to tell them about CoderDojo Ponce Springs', 'Supporting events as a volunteer']);
       $scope.availability = checklist(['Sat June 29, 2 - 5 PM', 'Sat July 13, 2 - 5 PM', 'Sat July 27, 2 - 5 PM', 'Sat August 10, 2 - 5 PM', 'Sat August 24, 2 - 5 PM']);
