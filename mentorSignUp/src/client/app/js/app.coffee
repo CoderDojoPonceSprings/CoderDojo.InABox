@@ -20,6 +20,7 @@ app = angular.module('mentorSignUp', ['ui.bootstrap', 'mongolab'])
 app.config ['$routeProvider', ($routeProvider) ->
   $routeProvider.when('/', {templateUrl: 'partials/form.html', controller: 'FormController'})
   $routeProvider.when('/thankyou', {templateUrl: 'partials/thankyou.html', controller: 'ThankyouController'})
+  $routeProvider.when('/signups', {templateUrl: 'partials/signups.html', controller: 'SignupsController'})
   $routeProvider.otherwise({redirectTo: '/'})
 ]
 
@@ -114,4 +115,53 @@ app.controller 'FormController', ['$rootScope', '$scope', '$location', 'Signup',
 
 app.controller 'ThankyouController', ['$rootScope', '$scope', ($rootScope, $scope) ->
   $scope.name = "#{$rootScope.signup.firstName}"
+]  
+
+app.controller 'SignupsController',  ['$rootScope', '$scope', 'Signup', ($rootScope, $scope, Signup) ->
+  queryAll = 
+    f: JSON.stringify {
+      id:1
+      firstName:1
+      lastName:1
+      email:1
+      backgroundCheckAuthorizationReceivedDate:1
+      backgroundCheckPassedDate:1
+    }
+    s: JSON.stringify {
+      backgroundCheckAuthorizationReceivedDate:1
+      backgroundCheckPassedDate:1
+      firstName:1
+    }
+  
+  queryOnlyMissingSomething = angular.copy queryAll
+  queryOnlyMissingSomething.q = JSON.stringify $or: [ 
+    { backgroundCheckAuthorizationReceivedDate: null }, { backgroundCheckPassedDate: null } 
+  ]
+
+  $scope.refreshAll = ->
+    $scope.signups = Signup.query queryAll
+
+  $scope.refreshOnlyMissingSomething = ->
+    $scope.signups = Signup.query queryOnlyMissingSomething
+
+  $scope.refreshOnlyMissingSomething()
+
+  refreshList = (updatedItem) ->
+    for item, index in $scope.signups        
+      if item._id.$oid is updatedItem._id.$oid
+        $scope.signups[index] = updatedItem    
+
+  $scope.isBackgroundCheckAuthorizationReceived = (signup) -> signup.backgroundCheckAuthorizationReceivedDate?
+  
+  $scope.backgroundCheckAuthorizationReceived = (signup) -> 
+    signup.updateSafe backgroundCheckAuthorizationReceivedDate: new Date(), refreshList
+  
+  $scope.backgroundCheckAuthorizationReset = (signup) ->
+    signup.updateSafe backgroundCheckAuthorizationReceivedDate: null, refreshList
+
+  $scope.isBackgroundCheckPassed = (signup) -> signup.backgroundCheckPassedDate?
+  
+  $scope.backgroundCheckPassed = (signup) -> signup.updateSafe backgroundCheckPassedDate: new Date(), refreshList
+  
+  $scope.backgroundCheckReset = (signup) -> signup.updateSafe backgroundCheckPassedDate: null, refreshList
 ]

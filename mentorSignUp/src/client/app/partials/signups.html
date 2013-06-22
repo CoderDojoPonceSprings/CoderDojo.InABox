@@ -1,0 +1,30 @@
+<a class='btn btn-primary' ng-click='refreshOnlyMissingSomething()'>Refresh <small class='badge badge-important'>show only people missing something</small></a>&nbsp;<a class='btn' ng-click='refreshAll()'>Refresh <small class='badge badge-success'>show all</small></a>
+<br />
+<br />
+<div ng-repeat='signup in signups'>
+  <div class='well'>
+    <h3>{{signup.firstName}} {{signup.lastName}}</h3>
+    <p>
+      Email: <a href="mailto:{{signup.email}}">{{signup.email}}</a>
+    </p>
+    <div ng-switch on='isBackgroundCheckAuthorizationReceived(signup)'>
+      <p ng-switch-when='false'>
+        <a class='btn' ng-click='backgroundCheckAuthorizationReceived(signup)'>Received background check authorization</a>
+      </p>
+      <p ng-switch-default>
+        Background authorization received on {{signup.backgroundCheckAuthorizationReceivedDate | date:'short' }} 
+        &nbsp;<a class='btn btn-mini' ng-click='backgroundCheckAuthorizationReset(signup)'>reset</a>
+      </p>    
+    </div>
+    <div ng-switch on='isBackgroundCheckPassed(signup)'>
+      <p ng-switch-when='false'>
+        <a class='btn' ng-click='backgroundCheckPassed(signup)'>Passed background check</a>      
+      </p>
+      <p ng-switch-default>
+        Background check passed on {{signup.backgroundCheckPassedDate | date:'short' }} 
+        &nbsp;<a class='btn btn-mini' ng-click='backgroundCheckReset(signup)'>reset</a>
+      </p> 
+    </div>   
+  </div>
+  <hr />
+</div>

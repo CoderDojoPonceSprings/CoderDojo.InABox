@@ -46,6 +46,10 @@
         templateUrl: 'partials/thankyou.html',
         controller: 'ThankyouController'
       });
+      $routeProvider.when('/signups', {
+        templateUrl: 'partials/signups.html',
+        controller: 'SignupsController'
+      });
       return $routeProvider.otherwise({
         redirectTo: '/'
       });
@@ -68,23 +72,23 @@
         backgroundCheck: false
       };
       $scope.mentorSkills = checklist(['Arduino / Raspberry Pi / Hardware hacking', 'CSS', 'HTML5', 'JavaScript', 'Node.js', 'Scratch', 'Python', 'Ruby', 'PHP', 'Java', 'C#', 'Robotics']);
-      $scope.form.additionalSkill = '';
+      $scope.additionalSkill = '';
       $scope.additionalSkills = [];
       $scope.additionalSkillAdd = function() {
-        if ($scope.form.additionalSkill === '') {
+        if ($scope.additionalSkill === '') {
           return;
         }
         $scope.additionalSkills.push({
-          name: $scope.form.additionalSkill,
+          name: $scope.additionalSkill,
           checked: true
         });
-        return $scope.form.additionalSkill = '';
+        return $scope.additionalSkill = '';
       };
       $scope.additionalSkillRemove = function(index) {
         return $scope.additionalSkills.splice(index, 1);
       };
       $scope.additionalSkillAddDisabled = function() {
-        return $scope.form.additionalSkill === '';
+        return $scope.additionalSkill === '';
       };
       $scope.volunteerOffers = checklist(['Mentoring kids on technology', 'Leading a 4-week exploration on a topic', 'Donating or reimaging computers', 'Reaching out to local schools to tell them about CoderDojo Ponce Springs', 'Supporting events as a volunteer']);
       $scope.availability = checklist(['Sat June 29, 2 - 5 PM', 'Sat July 13, 2 - 5 PM', 'Sat July 27, 2 - 5 PM', 'Sat August 10, 2 - 5 PM', 'Sat August 24, 2 - 5 PM']);
@@ -99,7 +103,6 @@
         $scope.form.mentorSkills = selectedItems($scope.mentorSkills);
         $scope.form.volunteerOffers = selectedItems($scope.volunteerOffers);
         $scope.form.submitDate = new Date();
-        delete $scope.form.additionalSkill;
         $scope.form.additionalSkills = $scope.additionalSkills;
         html = document.getElementById('message').innerHTML;
         return Signup.save($scope.form, function(signup) {
@@ -119,6 +122,86 @@
   app.controller('ThankyouController', [
     '$rootScope', '$scope', function($rootScope, $scope) {
       return $scope.name = "" + $rootScope.signup.firstName;
+    }
+  ]);
+
+  app.controller('SignupsController', [
+    '$rootScope', '$scope', 'Signup', function($rootScope, $scope, Signup) {
+      var queryAll, queryOnlyMissingSomething, refreshList;
+
+      queryAll = {
+        f: JSON.stringify({
+          id: 1,
+          firstName: 1,
+          lastName: 1,
+          email: 1,
+          backgroundCheckAuthorizationReceivedDate: 1,
+          backgroundCheckPassedDate: 1
+        }),
+        s: JSON.stringify({
+          backgroundCheckAuthorizationReceivedDate: 1,
+          backgroundCheckPassedDate: 1,
+          firstName: 1
+        })
+      };
+      queryOnlyMissingSomething = angular.copy(queryAll);
+      queryOnlyMissingSomething.q = JSON.stringify({
+        $or: [
+          {
+            backgroundCheckAuthorizationReceivedDate: null
+          }, {
+            backgroundCheckPassedDate: null
+          }
+        ]
+      });
+      $scope.refreshAll = function() {
+        return $scope.signups = Signup.query(queryAll);
+      };
+      $scope.refreshOnlyMissingSomething = function() {
+        return $scope.signups = Signup.query(queryOnlyMissingSomething);
+      };
+      $scope.refreshOnlyMissingSomething();
+      refreshList = function(updatedItem) {
+        var index, item, _i, _len, _ref, _results;
+
+        _ref = $scope.signups;
+        _results = [];
+        for (index = _i = 0, _len = _ref.length; _i < _len; index = ++_i) {
+          item = _ref[index];
+          if (item._id.$oid === updatedItem._id.$oid) {
+            _results.push($scope.signups[index] = updatedItem);
+          } else {
+            _results.push(void 0);
+          }
+        }
+        return _results;
+      };
+      $scope.isBackgroundCheckAuthorizationReceived = function(signup) {
+        return signup.backgroundCheckAuthorizationReceivedDate != null;
+      };
+      $scope.backgroundCheckAuthorizationReceived = function(signup) {
+        return signup.updateSafe({
+          backgroundCheckAuthorizationReceivedDate: new Date()
+        }, refreshList);
+      };
+      $scope.backgroundCheckAuthorizationReset = function(signup) {
+        return signup.updateSafe({
+          backgroundCheckAuthorizationReceivedDate: null
+        }, refreshList);
+      };
+      $scope.isBackgroundCheckPassed = function(signup) {
+        return signup.backgroundCheckPassedDate != null;
+      };
+      $scope.backgroundCheckPassed = function(signup) {
+        return signup.updateSafe({
+          backgroundCheckPassedDate: new Date()
+        }, refreshList);
+      };
+      return $scope.backgroundCheckReset = function(signup) {
+        return signup.updateSafe({
+          backgroundCheckPassedDate: null
+        }, refreshList);
+      };
     }
   ]);
 
