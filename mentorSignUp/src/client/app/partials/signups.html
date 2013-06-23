@@ -1,30 +1,46 @@
-<a class='btn btn-primary' ng-click='refreshOnlyMissingSomething()'>Refresh <small class='badge badge-important'>show only people missing something</small></a>&nbsp;<a class='btn' ng-click='refreshAll()'>Refresh <small class='badge badge-success'>show all</small></a>
-<br />
-<br />
-<div ng-repeat='signup in signups'>
-  <div class='well'>
-    <h3>{{signup.firstName}} {{signup.lastName}}</h3>
-    <p>
-      Email: <a href="mailto:{{signup.email}}">{{signup.email}}</a>
-    </p>
-    <div ng-switch on='isBackgroundCheckAuthorizationReceived(signup)'>
-      <p ng-switch-when='false'>
-        <a class='btn' ng-click='backgroundCheckAuthorizationReceived(signup)'>Received background check authorization</a>
-      </p>
-      <p ng-switch-default>
-        Background authorization received on {{signup.backgroundCheckAuthorizationReceivedDate | date:'short' }} 
-        &nbsp;<a class='btn btn-mini' ng-click='backgroundCheckAuthorizationReset(signup)'>reset</a>
-      </p>    
-    </div>
-    <div ng-switch on='isBackgroundCheckPassed(signup)'>
-      <p ng-switch-when='false'>
-        <a class='btn' ng-click='backgroundCheckPassed(signup)'>Passed background check</a>      
-      </p>
-      <p ng-switch-default>
-        Background check passed on {{signup.backgroundCheckPassedDate | date:'short' }} 
-        &nbsp;<a class='btn btn-mini' ng-click='backgroundCheckReset(signup)'>reset</a>
-      </p> 
-    </div>   
-  </div>
-  <hr />
+<div class='well'>
+  <h3 style='text-align:center'>CoderDojo Ponce Springs Signups</h3>
+  <h4>Filter users:</h4>
+  <a class='btn' ng-click='refreshOnlyMissingSomething()'>Show users missing something</a>&nbsp;<a class='btn' ng-click='refreshShowVerified()'>Show verified users</a>&nbsp;<a class='btn' ng-click='refreshAll()'>Show all</a>
+  <p>
+    <form ng-submit='searchByName(searchTerm)' style='display:inline'>
+      <div class='input-append' style='margin-top:.7em'>
+        <input class='span2' placeholder='search by name' ng-model='searchTerm' type='text'>
+          <a class='btn btn-primary' ng-click='searchByName(searchTerm)'>Go!</a>
+        </div>
+    </form>
+  </p>
 </div>
+<div ng-show='signups.length < 1'>
+  No signups found! Try a different filter or search?
+</div>
+<div ng-show='signups.length > 0'>
+  <h5>Found {{signups.length}} users</h5>
+  <div ng-repeat='signup in signups'>  
+    <div class='well'>
+      <h3>{{signup.firstName}} {{signup.lastName}}</h3>
+      <p>
+        Email: <a href="mailto:{{signup.email}}">{{signup.email}}</a>
+      </p>
+      <div ng-switch on='isBackgroundCheckAuthorizationReceived(signup)'>
+        <p ng-switch-when='false'>
+          <a class='btn' ng-click='backgroundCheckAuthorizationReceived(signup)'>Received background check authorization</a>
+        </p>
+        <p ng-switch-default>
+          Background authorization received on {{signup.backgroundCheckAuthorizationReceivedDate | date:'short' }} 
+          &nbsp;<a class='btn btn-mini' ng-click='backgroundCheckAuthorizationReset(signup)'>reset</a>
+        </p>    
+      </div>
+      <div ng-switch on='isBackgroundCheckPassed(signup)'>
+        <p ng-switch-when='false'>
+          <a class='btn' ng-click='backgroundCheckPassed(signup)'>Passed background check</a>      
+        </p>
+        <p ng-switch-default>
+          Background check passed on {{signup.backgroundCheckPassedDate | date:'short' }} 
+          &nbsp;<a class='btn btn-mini' ng-click='backgroundCheckReset(signup)'>reset</a>
+        </p> 
+      </div>   
+    </div>
+    <hr />
+  </div>
+</div>  
