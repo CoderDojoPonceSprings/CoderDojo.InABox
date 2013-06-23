@@ -1,7 +1,9 @@
 <div class='well'>
   <h3 style='text-align:center'>CoderDojo Ponce Springs Signups</h3>
   <h4>Filter users:</h4>
-  <a class='btn' ng-click='refreshOnlyMissingSomething()'>Show users missing something</a>&nbsp;<a class='btn' ng-click='refreshShowVerified()'>Show verified users</a>&nbsp;<a class='btn' ng-click='refreshAll()'>Show all</a>
+  <a class='btn' ng-click='showMissingSomething()'>Show users missing something</a>&nbsp;
+  <a class='btn' ng-click='showVerified()'>Show verified users</a>&nbsp;
+  <a class='btn' ng-click='showAll()'>Show all</a>
   <p>
     <form ng-submit='searchByName(searchTerm)' style='display:inline'>
       <div class='input-append' style='margin-top:.7em'>
