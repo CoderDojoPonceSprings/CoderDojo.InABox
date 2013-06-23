@@ -129,7 +129,7 @@
 
   app.controller('SignupsController', [
     '$rootScope', '$scope', 'Signup', function($rootScope, $scope, Signup) {
-      var queryAll, queryOnlyMissingSomething, refreshList;
+      var queryAll, queryOnlyMissingSomething, queryVerified, refreshList;
 
       queryAll = {
         f: JSON.stringify({
@@ -156,11 +156,28 @@
           }
         ]
       });
+      queryVerified = angular.copy(queryAll);
+      queryVerified.q = JSON.stringify({
+        $and: [
+          {
+            backgroundCheckAuthorizationReceivedDate: {
+              $ne: null
+            }
+          }, {
+            backgroundCheckPassedDate: {
+              $ne: null
+            }
+          }
+        ]
+      });
       $scope.refreshAll = function() {
         return $scope.signups = Signup.query(queryAll);
       };
       $scope.refreshOnlyMissingSomething = function() {
         return $scope.signups = Signup.query(queryOnlyMissingSomething);
+      };
+      $scope.refreshShowVerified = function() {
+        return $scope.signups = Signup.query(queryVerified);
       };
       $scope.refreshOnlyMissingSomething();
       refreshList = function(updatedItem) {
@@ -199,10 +216,34 @@
           backgroundCheckPassedDate: new Date()
         }, refreshList);
       };
-      return $scope.backgroundCheckReset = function(signup) {
+      $scope.backgroundCheckReset = function(signup) {
         return signup.updateSafe({
           backgroundCheckPassedDate: null
         }, refreshList);
+      };
+      return $scope.searchByName = function(name) {
+        var queryByName;
+
+        if (name === '') {
+          return;
+        }
+        queryByName = angular.copy(queryAll);
+        queryByName.q = JSON.stringify({
+          $or: [
+            {
+              firstName: {
+                $regex: name,
+                $options: 'i'
+              }
+            }, {
+              lastName: {
+                $regex: name,
+                $options: 'i'
+              }
+            }
+          ]
+        });
+        return $scope.signups = Signup.query(queryByName);
       };
     }
   ]);

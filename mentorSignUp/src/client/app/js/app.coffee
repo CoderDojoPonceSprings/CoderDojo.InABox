@@ -136,11 +136,19 @@ app.controller 'SignupsController',  ['$rootScope', '$scope', 'Signup', ($rootSc
     { backgroundCheckAuthorizationReceivedDate: null }, { backgroundCheckPassedDate: null } 
   ]
 
+  queryVerified = angular.copy queryAll
+  queryVerified.q = JSON.stringify $and: [ 
+    { backgroundCheckAuthorizationReceivedDate: {$ne: null} }, { backgroundCheckPassedDate: {$ne: null} } 
+  ]
+
   $scope.refreshAll = ->
     $scope.signups = Signup.query queryAll
 
   $scope.refreshOnlyMissingSomething = ->
     $scope.signups = Signup.query queryOnlyMissingSomething
+
+  $scope.refreshShowVerified = ->
+    $scope.signups = Signup.query queryVerified
 
   $scope.refreshOnlyMissingSomething()
 
@@ -162,4 +170,13 @@ app.controller 'SignupsController',  ['$rootScope', '$scope', 'Signup', ($rootSc
   $scope.backgroundCheckPassed = (signup) -> signup.updateSafe backgroundCheckPassedDate: new Date(), refreshList
   
   $scope.backgroundCheckReset = (signup) -> signup.updateSafe backgroundCheckPassedDate: null, refreshList
+
+  $scope.searchByName = (name) ->
+    return if name is ''
+    queryByName = angular.copy queryAll
+    queryByName.q = JSON.stringify $or: [ 
+      {firstName: { $regex: name, $options: 'i' }}, 
+      {lastName: { $regex: name, $options: 'i' }} 
+    ]
+    $scope.signups = Signup.query queryByName
 ]
