@@ -131,8 +131,8 @@ app.controller 'SignupsController',  ['$rootScope', '$scope', 'Signup', ($rootSc
       firstName:1
     }
   
-  queryOnlyMissingSomething = angular.copy queryAll
-  queryOnlyMissingSomething.q = JSON.stringify $or: [ 
+  queryMissingSomething = angular.copy queryAll
+  queryMissingSomething.q = JSON.stringify $or: [ 
     { backgroundCheckAuthorizationReceivedDate: null }, { backgroundCheckPassedDate: null } 
   ]
 
@@ -141,16 +141,22 @@ app.controller 'SignupsController',  ['$rootScope', '$scope', 'Signup', ($rootSc
     { backgroundCheckAuthorizationReceivedDate: {$ne: null} }, { backgroundCheckPassedDate: {$ne: null} } 
   ]
 
-  $scope.refreshAll = ->
-    $scope.signups = Signup.query queryAll
+  clearSearch = -> $scope.searchTerm = ''
+  
+  show = (query) ->
+    clearSearch()
+    $scope.signups = Signup.query query
 
-  $scope.refreshOnlyMissingSomething = ->
-    $scope.signups = Signup.query queryOnlyMissingSomething
+  $scope.showAll = ->
+    show queryAll
 
-  $scope.refreshShowVerified = ->
-    $scope.signups = Signup.query queryVerified
+  $scope.showMissingSomething = ->
+    show queryMissingSomething
 
-  $scope.refreshOnlyMissingSomething()
+  $scope.showVerified = ->
+    show queryVerified
+
+  $scope.showMissingSomething()
 
   refreshList = (updatedItem) ->
     for item, index in $scope.signups        

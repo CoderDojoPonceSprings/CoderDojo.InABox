@@ -129,7 +129,7 @@
 
   app.controller('SignupsController', [
     '$rootScope', '$scope', 'Signup', function($rootScope, $scope, Signup) {
-      var queryAll, queryOnlyMissingSomething, queryVerified, refreshList;
+      var clearSearch, queryAll, queryMissingSomething, queryVerified, refreshList, show;
 
       queryAll = {
         f: JSON.stringify({
@@ -146,8 +146,8 @@
           firstName: 1
         })
       };
-      queryOnlyMissingSomething = angular.copy(queryAll);
-      queryOnlyMissingSomething.q = JSON.stringify({
+      queryMissingSomething = angular.copy(queryAll);
+      queryMissingSomething.q = JSON.stringify({
         $or: [
           {
             backgroundCheckAuthorizationReceivedDate: null
@@ -170,16 +170,23 @@
           }
         ]
       });
-      $scope.refreshAll = function() {
-        return $scope.signups = Signup.query(queryAll);
+      clearSearch = function() {
+        return $scope.searchTerm = '';
       };
-      $scope.refreshOnlyMissingSomething = function() {
-        return $scope.signups = Signup.query(queryOnlyMissingSomething);
+      show = function(query) {
+        clearSearch();
+        return $scope.signups = Signup.query(query);
       };
-      $scope.refreshShowVerified = function() {
-        return $scope.signups = Signup.query(queryVerified);
+      $scope.showAll = function() {
+        return show(queryAll);
       };
-      $scope.refreshOnlyMissingSomething();
+      $scope.showMissingSomething = function() {
+        return show(queryMissingSomething);
+      };
+      $scope.showVerified = function() {
+        return show(queryVerified);
+      };
+      $scope.showMissingSomething();
       refreshList = function(updatedItem) {
         var index, item, _i, _len, _ref, _results;
 
