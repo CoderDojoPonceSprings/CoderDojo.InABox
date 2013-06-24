@@ -1,5 +1,5 @@
-<div class='well'>
-  <h3 style='text-align:center'>CoderDojo Ponce Springs Signups</h3>
+<h3 style='text-align:center'>CoderDojo Ponce Springs Signups</h3>
+<div class='well'>  
   <h4>Filter users:</h4>
   <a class='btn' ng-click='showMissingSomething()'>Show users missing something</a>&nbsp;
   <a class='btn' ng-click='showVerified()'>Show verified users</a>&nbsp;
@@ -22,8 +22,16 @@
     <div class='well'>
       <h3>{{signup.firstName}} {{signup.lastName}}</h3>
       <p>
-        Email: <a href="mailto:{{signup.email}}">{{signup.email}}</a>
-      </p>
+        <b>Email:</b> <a href="mailto:{{signup.email}}">{{signup.email}}</a>
+      </p>      
+      <div>
+        <p>
+          <b>Volunteering for:</b>
+        </p>
+        <ul>
+          <li ng-repeat='offer in signup.volunteerOffers'>{{offer.name}}</li>
+        </ul>
+      </div>
       <div ng-switch on='isBackgroundCheckAuthorizationReceived(signup)'>
         <p ng-switch-when='false'>
           <a class='btn' ng-click='backgroundCheckAuthorizationReceived(signup)'>Received background check authorization</a>
@@ -41,8 +49,7 @@
           Background check passed on {{signup.backgroundCheckPassedDate | date:'short' }} 
           &nbsp;<a class='btn btn-mini' ng-click='backgroundCheckReset(signup)'>reset</a>
         </p> 
-      </div>   
+      </div>      
     </div>
-    <hr />
   </div>
 </div>  

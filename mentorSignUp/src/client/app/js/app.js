@@ -165,7 +165,7 @@
         }
         return skillCounts;
       };
-      findMentorsForSkill = function(skill, signups) {
+      return findMentorsForSkill = function(skill, signups) {
         var allSkills, mentor, mentors, skillExists, _i, _len;
         mentors = [];
         for (_i = 0, _len = signups.length; _i < _len; _i++) {
@@ -182,9 +182,6 @@
         }
         return mentors;
       };
-      return $scope.getBadgeClass = function(index) {
-        return 'badge';
-      };
     }
   ]);
 
@@ -198,7 +195,8 @@
           lastName: 1,
           email: 1,
           backgroundCheckAuthorizationReceivedDate: 1,
-          backgroundCheckPassedDate: 1
+          backgroundCheckPassedDate: 1,
+          volunteerOffers: 1
         }),
         s: JSON.stringify({
           backgroundCheckAuthorizationReceivedDate: 1,

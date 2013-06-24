@@ -166,12 +166,7 @@ app.controller 'SkillsInventoryController', ['$rootScope', '$scope', 'Signup', (
       skillExists = _.find allSkills, (item) -> item == skill
       if skillExists?
         mentors.push mentor.firstName + ' ' + mentor.lastName
-    return mentors    
-
-  $scope.getBadgeClass = (index) ->
-    return 'badge'
-    #if index % 0 then return 'badge'
-    #else if index % 1 then return 'badge badge-info'
+    return mentors
 ]
 
 app.controller 'SignupsController',  ['$rootScope', '$scope', 'Signup', ($rootScope, $scope, Signup) ->
@@ -183,6 +178,7 @@ app.controller 'SignupsController',  ['$rootScope', '$scope', 'Signup', ($rootSc
       email:1
       backgroundCheckAuthorizationReceivedDate:1
       backgroundCheckPassedDate:1
+      volunteerOffers:1
     }
     s: JSON.stringify {
       backgroundCheckAuthorizationReceivedDate:1
