@@ -1,0 +1,15 @@
+<h2>Mentor skills inventory</h2>
+<div class='well'>
+    <div ng-repeat='(skill, count) in skillCounts'>
+      <h3>{{count[0]}}</h3>
+      <p>{{count[1]}} mentors have this skill</p>
+      <p>
+        <a class='btn btn-primary btn-mini' ng-click='showNames = !showNames' ng-show='!showNames'>show mentor names</a>
+        <a class='btn btn-inverse btn-mini' ng-click='showNames = !showNames' ng-show='showNames'>hide mentor names</a>
+      </p>
+      <ul ng-show='showNames'>
+        <div ng-repeat='(index, mentor) in count[2]'><span class='badge badge-info'>{{index + 1}}</span>&nbsp;<small>{{mentor}}</small></li>
+      </ul>      
+      <hr />
+    </div>
+</div>  
