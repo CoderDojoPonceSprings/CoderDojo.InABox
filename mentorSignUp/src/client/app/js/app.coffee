@@ -21,6 +21,7 @@ app.config ['$routeProvider', ($routeProvider) ->
   $routeProvider.when('/', {templateUrl: 'partials/form.html', controller: 'FormController'})
   $routeProvider.when('/thankyou', {templateUrl: 'partials/thankyou.html', controller: 'ThankyouController'})
   $routeProvider.when('/signups', {templateUrl: 'partials/signups.html', controller: 'SignupsController'})
+  $routeProvider.when('/skillsInventory', {templateUrl: 'partials/skillsInventory.html', controller: 'SkillsInventoryController'})
   $routeProvider.otherwise({redirectTo: '/'})
 ]
 
@@ -114,6 +115,64 @@ app.controller 'FormController', ['$rootScope', '$scope', '$location', 'Signup',
 app.controller 'ThankyouController', ['$rootScope', '$scope', ($rootScope, $scope) ->
   $scope.name = "#{$rootScope.signup.firstName}"
 ]  
+
+app.controller 'SkillsInventoryController', ['$rootScope', '$scope', 'Signup', ($rootScope, $scope, Signup) ->
+  '''
+  signups = [ 
+    name: 'Joe Koberg'
+    mentorSkills: ['Python', 'C#', 'Ruby', 'CoffeeScript', 'JavaScript', 'PHP', 'Node', 'Android']
+    additionalSkills: ['F#', 'Django', 'BitCoin']
+  ,
+    name: 'Erin Stanfil'
+    mentorSkills: ['JavaScript', 'Java', 'Groovy', 'CSS', 'HTML', 'C++']
+    additionalSkills: ['Grails']
+  ,
+    name: 'Josh Gough'
+    mentorSkills: ['C#', 'Python', 'CoffeeScript', 'JavaScript', 'CSS', 'HTML',  'PhoneGap']
+    additionalSkills: ['AngularJS', 'Backbone', 'Underscore']
+  ]
+  '''
+  Signup.query (signups) ->
+    $scope.skillCounts = quantifySkills signups
+
+  quantifySkills = (signups) ->
+    skillList = []
+    for signup in signups
+      if signup.mentorSkills? and _.isArray signup.mentorSkills
+        skillList.push _.pluck(signup.mentorSkills, 'name')...
+      if signup.additionalSkills? and _.isArray signup.additionalSkills
+        skillList.push _.pluck(signup.additionalSkills, 'name')...
+
+    skillCounts = _.reduce skillList.sort(), (counts, skill) ->
+      unless counts[skill]? then counts[skill] = 0
+      counts[skill]++
+      return counts 
+    , {}
+
+    skillCounts = _.chain(skillCounts).pairs().sortBy((skillCount) -> -skillCount[1]).value()    
+
+    for value, index in skillCounts
+      mentors = findMentorsForSkill value[0], signups
+      value[2] = mentors
+
+    return skillCounts  
+
+  findMentorsForSkill = (skill, signups) ->
+    mentors = []
+    for mentor in signups
+      allSkills = []
+      allSkills.push _.pluck(mentor.mentorSkills, 'name')...
+      allSkills.push _.pluck(mentor.additionalSkills, 'name')...
+      skillExists = _.find allSkills, (item) -> item == skill
+      if skillExists?
+        mentors.push mentor.firstName + ' ' + mentor.lastName
+    return mentors    
+
+  $scope.getBadgeClass = (index) ->
+    return 'badge'
+    #if index % 0 then return 'badge'
+    #else if index % 1 then return 'badge badge-info'
+]
 
 app.controller 'SignupsController',  ['$rootScope', '$scope', 'Signup', ($rootScope, $scope, Signup) ->
   queryAll = 
