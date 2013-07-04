@@ -17,6 +17,13 @@ selectedItems = (items) ->
 
 app = angular.module('mentorSignUp', ['ui.bootstrap', 'mongolab'])
 
+app.directive 'match', ($parse) ->
+  require: 'ngModel'
+  link: (scope, elem, attrs, ctrl) ->
+    scope.$watch -> 
+      $parse(attrs.match)(scope) is ctrl.$modelValue
+    , (currentValue) -> ctrl.$setValidity 'mismatch', currentValue
+
 app.config ['$routeProvider', ($routeProvider) ->
   $routeProvider.when('/', {templateUrl: 'partials/form.html', controller: 'FormController'})
   $routeProvider.when('/thankyou', {templateUrl: 'partials/thankyou.html', controller: 'ThankyouController'})
@@ -29,6 +36,7 @@ app.controller 'FormController', ['$rootScope', '$scope', '$location', 'Signup',
 ($rootScope, $scope, $location, Signup, $http) ->
   $scope.form = 
     email: ''
+    emailConfirm: ''
     firstName: ''
     lastName: ''
     company: ''
@@ -38,7 +46,7 @@ app.controller 'FormController', ['$rootScope', '$scope', '$location', 'Signup',
     other: ''
     kidExperience: false
     tshirtSize: 'Medium'
-    backgroundCheck: false    
+    backgroundCheck: false
 
   $scope.mentorSkills = checklist [
     'Arduino / Raspberry Pi / Hardware hacking'
