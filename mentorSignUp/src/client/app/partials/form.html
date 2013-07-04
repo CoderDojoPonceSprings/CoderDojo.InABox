@@ -5,252 +5,257 @@
 <p><b>Important:</b> once you submit this form, we'll email you a background check authorization form that you'll need to download, complete, and return to us to help us ensure child safety at events. (<a style='font-size:85%' href="content/CoderDojoPonceSprings-BackgroundCheckAuthorization.pdf">Click here to manually download the background check authorization form to learn more.</a>)</p>
 
 <tabs>
-  <pane heading="Form">
-<form class="form-horizontal" ng-submit="submit()">
-<fieldset>
+  <pane heading='Form'>
+    <form name='signupForm' ng-submit='submit()'>
+      <fieldset>
+        <div class="control-group">
+          <label class="control-label required" for="email">Email</label>
+          <div class="controls">
+            <input id="email" name="email" ng-model="form.email" class="input-xlarge" required type="text">
+            <p class="help-block">user@example.com</p>
+          </div>
+        </div>
 
-<div class="control-group">
-  <label class="control-label required" for="email">Email</label>
-  <div class="controls">
-    <input id="email" ng-model="form.email" class="input-xlarge" required type="text">
-    <p class="help-block">user@example.com</p>
-  </div>
-</div>
+        <div class="control-group">
+          <label class="control-label required" for="emailConfirm">Confirm Email</label>
+          <div class="controls">
+            <input name="emailConfirm" ng-model="form.emailConfirm" class="input-xlarge" required type="text"
+              match='form.email'>
+            <div ng-show='signupForm.emailConfirm.$error.mismatch'>
+              <span class='badge badge-important'>Email and Confirm Email must match.</span>
+            </div>    
+          </div>  
+        </div>
 
-<div class="control-group">
-  <label class="control-label required" for="firstName">First name</label>
-  <div class="controls">
-    <input id="firstName" ng-model="form.firstName" class="input-xlarge" required type="text">    
-  </div>
-</div>
+        <div class="control-group">
+          <label class="control-label required" for="firstName">First name</label>
+          <div class="controls">
+            <input id="firstName" ng-model="form.firstName" class="input-xlarge" required type="text">    
+          </div>
+        </div>
 
-<div class="control-group">
-  <label class="control-label required" for="lastName">Last name</label>
-  <div class="controls">
-    <input id="lastName" ng-model="form.lastName" class="input-xlarge" required type="text">    
-  </div>
-</div>
+        <div class="control-group">
+          <label class="control-label required" for="lastName">Last name</label>
+          <div class="controls">
+            <input id="lastName" ng-model="form.lastName" class="input-xlarge" required type="text">    
+          </div>
+        </div>
 
-<div class="control-group">
-  <label class="control-label" for="company">Company</label>
-  <div class="controls">
-    <input id="company" ng-model="form.company" class="input-xlarge" type="text">    
-  </div>
-</div>
+        <div class="control-group">
+          <label class="control-label" for="company">Company</label>
+          <div class="controls">
+            <input id="company" ng-model="form.company" class="input-xlarge" type="text">    
+          </div>
+        </div>
 
-<div class="control-group">
-  <label class="control-label" for="title">Title</label>
-  <div class="controls">
-    <input id="title" ng-model="form.title" class="input-xlarge" type="text">    
-  </div>
-</div>
+        <div class="control-group">
+          <label class="control-label" for="title">Title</label>
+          <div class="controls">
+            <input id="title" ng-model="form.title" class="input-xlarge" type="text">    
+          </div>
+        </div>
 
-<div class="control-group">
-  <label class="control-label" for="zip">Zip code</label>
-  <div class="controls">
-    <input id="zip" ng-model="form.zip" class="input-xlarge" type="text">    
-  </div>
-</div>
+        <div class="control-group">
+          <label class="control-label" for="zip">Zip code</label>
+          <div class="controls">
+            <input id="zip" ng-model="form.zip" class="input-xlarge" type="text">    
+          </div>
+        </div>
 
-<div class="control-group">
-  <label class="control-label" for="expertise">Area of expertise</label>
-  <div class="controls">
-    <input id="expertise" ng-model="form.expertise" class="input-xlarge" type="text">
-    <p class="help-block">(e.g. web development, gaming, mobile apps, databases, etc.)</p>
-  </div>
-</div>
+        <div class="control-group">
+          <label class="control-label" for="expertise">Area of expertise</label>
+          <div class="controls">
+            <input id="expertise" ng-model="form.expertise" class="input-xlarge" type="text">
+            <p class="help-block">(e.g. web development, gaming, mobile apps, databases, etc.)</p>
+          </div>
+        </div>
 
-<div class="control-group">
-  <label class="control-label" for="mentorSkills">Skills</label>
-  <div class="controls">
-    <label ng-repeat="skill in mentorSkills">
-      <input
-        name='mentorSkills'
-        type="checkbox"
-        value="{{skill.name}}"
-        ng-checked="skill.checked"
-        ng-model="skill.checked"
-      >
-      <span>{{skill.name}}</span>
-    </label>
-  </div>
-</div>
+        <div class="control-group">
+          <label class="control-label" for="mentorSkills">Skills</label>
+          <div class="controls">
+            <label ng-repeat="skill in mentorSkills">
+              <input
+                name='mentorSkills'
+                type="checkbox"
+                value="{{skill.name}}"
+                ng-checked="skill.checked"
+                ng-model="skill.checked"
+              >
+              <span>{{skill.name}}</span>
+            </label>
+          </div>
+        </div>
 
-<div class='control-group'>
-  <label class='control-label' for='additional'>Additional skills</label>
-  <div class="controls" style='margin-bottom: 5px'>
-    <input ng-model='additionalSkill.value' type='text' /> <a class='btn' ng-click='additionalSkillAdd()' style='margin-top:-2px' ng-disabled='additionalSkillAddDisabled()'>Add</a>
-    <div>
-      <div ng-repeat='skill in additionalSkills' style='padding-top: 2px; padding-bot:2px'><span class='label label-info'>{{skill.name}}</span>&nbsp;<span class='badge badge-important' ng-click='additionalSkillRemove($index)'>X</span>
+        <div class='control-group'>
+          <label class='control-label' for='additional'>Additional skills</label>
+          <div class="controls" style='margin-bottom: 5px'>
+            <input ng-model='additionalSkill.value' type='text' /> <a class='btn' ng-click='additionalSkillAdd()' style='margin-top:-2px' ng-disabled='additionalSkillAddDisabled()'>Add</a>
+            <div>
+              <div ng-repeat='skill in additionalSkills' style='padding-top: 2px; padding-bot:2px'><span class='label label-info'>{{skill.name}}</span>&nbsp;<span class='badge badge-important' ng-click='additionalSkillRemove($index)'>X</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="kidExperience">Kid experience</label>
+          <div class="controls">
+            <label class="checkbox" for="kidExperience">
+              <input ng-model="form.kidExperience" value="I have experience working or volunteering with kids ages 7 to 17" type="checkbox">
+              I have experience working or volunteering with kids ages 7 to 17
+            </label>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="volunteerOffers">I can help with...</label>
+          <div class="controls">
+            <label ng-repeat="skill in volunteerOffers">
+              <input
+                name='volunteerOffers'
+                type="checkbox"
+                value="{{skill.name}}"
+                ng-checked="skill.checked"
+                ng-model="skill.checked"
+              >
+              <span>{{skill.name}}</span>
+            </label>
+          </div>
+        </div>
+
+        <div class='control-group'>
+          <label class='control-label' for='other'>Other ideas / comments</label>
+          <div class='controls'>                     
+            <textarea id='other' ng-model='form.other'></textarea>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="availability">Availability</label>
+          <div class="controls">
+            <p class="help-block" style='padding-top:5px'>Initially, we will hold sessions on Saturdays from 2 to 5 PM at the downtown location once every two weeks. This may increase or decrease over time.<br/><br/><b>Please indicate each of these days you're available:</b></p>
+            <p><br/>
+              <label ng-repeat="slot in availability">
+                <input
+                  name='availability'
+                  type="checkbox"
+                  value="{{slot.name}}"
+                  ng-checked="slot.checked"
+                  ng-model="slot.checked"
+                >
+                <span>{{slot.name}}</span>
+              </label>
+            </p>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="tshirtSize">T-shirt Size</label>
+          <div class="controls">
+            <div class="dropdown">
+              <span>{{form.tshirtSize}}</span> <a class="btn dropdown-toggle">Change T-shirt size</a>
+              <ul class="dropdown-menu">
+                <li ng-repeat="tshirtSize in tshirtSizes">
+                  <a ng-click='tshirtSizeSelect(tshirtSize)'>{{tshirtSize}}</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="backgroundCheck">Background Check</label>
+          <div class="controls">
+            <label class="checkbox" for="backgroundCheck">
+              <input ng-model="form.backgroundCheck" name="backgroundCheck" value="I agree to a background check" required type="checkbox">
+              I agree to a background check
+            </label>
+          </div>
+        </div>
+        <button class='btn btn-primary' type='submit' ng-disabled='signupForm.$invalid'>Send</button>
+      </fieldset>
+    </form>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+  </pane>
+  <pane heading="Preview">
+    <h3>Message preview</h3>
+    The following message will be emailed to us and sent to you for reference. Click the <b>Form</b> tab to modify or send it.
+    <br/>
+    <br/>
+    <div id='message'>
+      <h4>Email</h4>
+      <div class='field'>{{form.email}}</div>
+
+      <h4>First name</h4>
+      <div class='field'>{{form.firstName}}</div>
+
+      <h4>Last name</h4>
+      <div class='field'>{{form.lastName}}</div>
+
+      <div ng-show='form.company'>
+        <h4>Company</h4>
+        <div class='field'>{{form.company}}</div>
+      </div>
+
+      <div ng-show='form.title'>
+        <h4>Title</h4>
+        <div class='field'>{{form.title}}</div>
+      </div>
+
+      <div ng-show='form.zip'>
+        <h4>Zip code</h4>
+        <div class='field'>{{form.zip}}</div>
+      </div>
+
+      <div ng-show='form.expertise'>
+        <h4>Area of expertise</h4>
+        <div class='field'>{{form.expertise}}</div>
+      </div>
+
+      <div ng-show='(mentorSkills | filter:{checked:true}).length > 0'>
+        <h4>Skills</h4>
+        <ul>
+          <li ng-repeat='skill in mentorSkills | filter:{checked:true}'>{{skill.name}}</li>
+        </ul>
+      </div>
+
+      <div ng-show='additionalSkills.length > 0'>
+        <h4>Additional skills</h4>
+        <ul>
+          <li ng-repeat='skill in additionalSkills'>{{skill.name}}</li>
+        </ul>
+      </div>
+
+      <h4>Kid experience</h4>
+      <div class='field'>{{form.kidExperience}}</div>
+
+      <div ng-show='(volunteerOffers | filter:{checked:true}).length > 0'>
+        <h4>I can help with</h4>
+        <ul>
+          <li ng-repeat='offer in volunteerOffers | filter:{checked:true}'>{{offer.name}}</li>
+        </ul>
+      </div>
+
+      <div ng-show='form.other'>
+        <h4>Other ideas / comments</h4>
+        <div class='field'>{{form.other}}</div>
+      </div>
+
+      <div ng-show='(availability | filter:{checked:true}).length > 0'>
+        <h4>Availability</h4>
+        <ul>
+          <li ng-repeat='slot in availability | filter:{checked:true}'>{{slot.name}}</li>
+        </ul>
+      </div>
+
+      <h4>T-shirt size</h4>
+      <div class='field'>{{form.tshirtSize}}</div>
+
+      <h4>I agree to a background check</h4>
+      <div class='field'>{{form.backgroundCheck}}</div>
     </div>
-  </div>
-</div>
-
-<div class="control-group">
-  <label class="control-label" for="kidExperience">Kid experience</label>
-  <div class="controls">
-    <label class="checkbox" for="kidExperience">
-      <input ng-model="form.kidExperience" value="I have experience working or volunteering with kids ages 7 to 17" type="checkbox">
-      I have experience working or volunteering with kids ages 7 to 17
-    </label>
-  </div>
-</div>
-
-<div class="control-group">
-  <label class="control-label" for="volunteerOffers">I can help with...</label>
-  <div class="controls">
-    <label ng-repeat="skill in volunteerOffers">
-      <input
-        name='volunteerOffers'
-        type="checkbox"
-        value="{{skill.name}}"
-        ng-checked="skill.checked"
-        ng-model="skill.checked"
-      >
-      <span>{{skill.name}}</span>
-    </label>
-  </div>
-</div>
-
-<div class='control-group'>
-  <label class='control-label' for='other'>Other ideas / comments</label>
-  <div class='controls'>                     
-    <textarea id='other' ng-model='form.other'></textarea>
-  </div>
-</div>
-
-<div class="control-group">
-  <label class="control-label" for="availability">Availability</label>
-  <div class="controls">
-    <p class="help-block" style='padding-top:5px'>Initially, we will hold sessions on Saturdays from 2 to 5 PM at the downtown location once every two weeks. This may increase or decrease over time.<br/><br/><b>Please indicate each of these days you're available:</b></p>
-    <p><br/>
-      <label ng-repeat="slot in availability">
-        <input
-          name='availability'
-          type="checkbox"
-          value="{{slot.name}}"
-          ng-checked="slot.checked"
-          ng-model="slot.checked"
-        >
-        <span>{{slot.name}}</span>
-      </label>
-    </p>
-  </div>
-</div>
-
-<div class="control-group">
-  <label class="control-label" for="tshirtSize">T-shirt Size</label>
-  <div class="controls">
-    <div class="dropdown">
-      <span>{{form.tshirtSize}}</span> <a class="btn dropdown-toggle">Change T-shirt size</a>
-      <ul class="dropdown-menu">
-        <li ng-repeat="tshirtSize in tshirtSizes">
-          <a ng-click='tshirtSizeSelect(tshirtSize)'>{{tshirtSize}}</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<div class="control-group">
-  <label class="control-label" for="backgroundCheck">Background Check</label>
-  <div class="controls">
-    <label class="checkbox" for="backgroundCheck">
-      <input ng-model="form.backgroundCheck" name="backgroundCheck" value="I agree to a background check" required type="checkbox">
-      I agree to a background check
-    </label>
-  </div>
-</div>
-
-<button class='btn btn-primary' type='submit'>Send</button>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
-</fieldset>
-</form>
-
-</pane>
-<pane heading="Preview">
-<h3>Message preview</h3>
-The following message will be emailed to us and sent to you for reference. Click the <b>Form</b> tab to modify or send it.
-<br/>
-<br/>
-
-<div id='message'>
-<h4>Email</h4>
-<div class='field'>{{form.email}}</div>
-
-<h4>First name</h4>
-<div class='field'>{{form.firstName}}</div>
-
-<h4>Last name</h4>
-<div class='field'>{{form.lastName}}</div>
-
-<div ng-show='form.company'>
-  <h4>Company</h4>
-  <div class='field'>{{form.company}}</div>
-</div>
-
-<div ng-show='form.title'>
-  <h4>Title</h4>
-  <div class='field'>{{form.title}}</div>
-</div>
-
-<div ng-show='form.zip'>
-  <h4>Zip code</h4>
-  <div class='field'>{{form.zip}}</div>
-</div>
-
-<div ng-show='form.expertise'>
-  <h4>Area of expertise</h4>
-  <div class='field'>{{form.expertise}}</div>
-</div>
-
-<div ng-show='(mentorSkills | filter:{checked:true}).length > 0'>
-  <h4>Skills</h4>
-  <ul>
-    <li ng-repeat='skill in mentorSkills | filter:{checked:true}'>{{skill.name}}</li>
-  </ul>
-</div>
-
-<div ng-show='additionalSkills.length > 0'>
-  <h4>Additional skills</h4>
-  <ul>
-    <li ng-repeat='skill in additionalSkills'>{{skill.name}}</li>
-  </ul>
-</div>
-
-<h4>Kid experience</h4>
-<div class='field'>{{form.kidExperience}}</div>
-
-<div ng-show='(volunteerOffers | filter:{checked:true}).length > 0'>
-  <h4>I can help with</h4>
-  <ul>
-    <li ng-repeat='offer in volunteerOffers | filter:{checked:true}'>{{offer.name}}</li>
-  </ul>
-</div>
-
-<div ng-show='form.other'>
-  <h4>Other ideas / comments</h4>
-  <div class='field'>{{form.other}}</div>
-</div>
-
-<div ng-show='(availability | filter:{checked:true}).length > 0'>
-  <h4>Availability</h4>
-  <ul>
-    <li ng-repeat='slot in availability | filter:{checked:true}'>{{slot.name}}</li>
-  </ul>
-</div>
-
-<h4>T-shirt size</h4>
-<div class='field'>{{form.tshirtSize}}</div>
-
-<h4>I agree to a background check</h4>
-<div class='field'>{{form.backgroundCheck}}</div>
-</div>
-
-</pane>
+  </pane>
 </tabs>
