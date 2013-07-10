@@ -1,0 +1,40 @@
+<h3 style='text-align:center'>CoderDojo Ponce Springs Verified Volunteers and Mentors</h3>
+<p style='text-align:center'>These members have passed the background check are good to go!</p>
+<div ng-show='members.length < 1'>
+  No verified members found!
+</div>
+<div ng-show='members.length > 0'>
+  <h4>Filter users:</h4>
+  <p>
+    <div class='input-append' style='margin-top:.7em'>
+      <input class='span2' placeholder='filter by name' ng-model='filterTerm' type='text'>
+    </div>
+  </p>
+  <h5>Found {{(members | filter:filterByName()).length}} users</h5> 
+  <div ng-repeat='member in members | filter:filterByName()'>  
+    <div class='well'>
+      <h3>{{member.firstName}} {{member.lastName}}</h3>
+      <p>
+        <b>Email:</b> <a href="mailto:{{member.email}}">{{member.email}}</a>
+      </p>      
+      <div>
+        <p>
+          <b>Volunteering for:</b>
+        </p>
+        <ul>
+          <li ng-repeat='offer in member.volunteerOffers'>{{offer.name}}</li>
+        </ul>
+      </div>
+      <div>
+        <p>
+          Background authorization received on {{member.backgroundCheckAuthorizationReceivedDate | date:'short' }} 
+        </p>    
+      </div>
+      <div>
+        <p>
+          Background check passed on {{member.backgroundCheckPassedDate | date:'short' }} 
+        </p> 
+      </div>      
+    </div>
+  </div>
+</div>  

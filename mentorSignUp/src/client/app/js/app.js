@@ -63,6 +63,10 @@
         templateUrl: 'partials/signups.html',
         controller: 'SignupsController'
       });
+      $routeProvider.when('/verified', {
+        templateUrl: 'partials/verified.html',
+        controller: 'VerifiedController'
+      });
       $routeProvider.when('/skillsInventory', {
         templateUrl: 'partials/skillsInventory.html',
         controller: 'SkillsInventoryController'
@@ -204,50 +208,55 @@
     }
   ]);
 
+  app.queryAll = {
+    f: JSON.stringify({
+      id: 1,
+      firstName: 1,
+      lastName: 1,
+      email: 1,
+      backgroundCheckAuthorizationReceivedDate: 1,
+      backgroundCheckPassedDate: 1,
+      volunteerOffers: 1
+    }),
+    s: JSON.stringify({
+      backgroundCheckAuthorizationReceivedDate: 1,
+      backgroundCheckPassedDate: 1,
+      firstName: 1
+    })
+  };
+
+  app.queryMissingSomething = angular.copy(app.queryAll);
+
+  app.queryMissingSomething.q = JSON.stringify({
+    $or: [
+      {
+        backgroundCheckAuthorizationReceivedDate: null
+      }, {
+        backgroundCheckPassedDate: null
+      }
+    ]
+  });
+
+  app.queryVerified = angular.copy(app.queryAll);
+
+  app.queryVerified.q = JSON.stringify({
+    $and: [
+      {
+        backgroundCheckAuthorizationReceivedDate: {
+          $ne: null
+        }
+      }, {
+        backgroundCheckPassedDate: {
+          $ne: null
+        }
+      }
+    ]
+  });
+
   app.controller('SignupsController', [
     '$rootScope', '$scope', 'Signup', function($rootScope, $scope, Signup) {
-      var clearSearch, queryAll, queryMissingSomething, queryVerified, refreshList, show;
+      var clearSearch, refreshList, show;
 
-      queryAll = {
-        f: JSON.stringify({
-          id: 1,
-          firstName: 1,
-          lastName: 1,
-          email: 1,
-          backgroundCheckAuthorizationReceivedDate: 1,
-          backgroundCheckPassedDate: 1,
-          volunteerOffers: 1
-        }),
-        s: JSON.stringify({
-          backgroundCheckAuthorizationReceivedDate: 1,
-          backgroundCheckPassedDate: 1,
-          firstName: 1
-        })
-      };
-      queryMissingSomething = angular.copy(queryAll);
-      queryMissingSomething.q = JSON.stringify({
-        $or: [
-          {
-            backgroundCheckAuthorizationReceivedDate: null
-          }, {
-            backgroundCheckPassedDate: null
-          }
-        ]
-      });
-      queryVerified = angular.copy(queryAll);
-      queryVerified.q = JSON.stringify({
-        $and: [
-          {
-            backgroundCheckAuthorizationReceivedDate: {
-              $ne: null
-            }
-          }, {
-            backgroundCheckPassedDate: {
-              $ne: null
-            }
-          }
-        ]
-      });
       clearSearch = function() {
         return $scope.searchTerm = '';
       };
@@ -256,13 +265,13 @@
         return $scope.signups = Signup.query(query);
       };
       $scope.showAll = function() {
-        return show(queryAll);
+        return show(app.queryAll);
       };
       $scope.showMissingSomething = function() {
-        return show(queryMissingSomething);
+        return show(app.queryMissingSomething);
       };
       $scope.showVerified = function() {
-        return show(queryVerified);
+        return show(app.queryVerified);
       };
       $scope.showMissingSomething();
       refreshList = function(updatedItem) {
@@ -312,7 +321,7 @@
         if (name === '') {
           return;
         }
-        queryByName = angular.copy(queryAll);
+        queryByName = angular.copy(app.queryAll);
         queryByName.q = JSON.stringify({
           $or: [
             {
@@ -329,6 +338,26 @@
           ]
         });
         return $scope.signups = Signup.query(queryByName);
+      };
+    }
+  ]);
+
+  app.controller('VerifiedController', [
+    '$scope', 'Signup', function($scope, Signup) {
+      $scope.members = Signup.query(app.queryVerified);
+      return $scope.filterByName = function() {
+        return function(item) {
+          if ($scope.filterTerm == null) {
+            return true;
+          }
+          if (item.firstName.toLowerCase().indexOf($scope.filterTerm.toLowerCase()) > -1 || item.lastName.toLowerCase().indexOf($scope.filterTerm.toLowerCase()) > -1) {
+            return true;
+          }
+          if ((item.firstName + ' ' + item.lastName).toLowerCase().indexOf($scope.filterTerm.toLowerCase()) === 0) {
+            return true;
+          }
+          return false;
+        };
       };
     }
   ]);

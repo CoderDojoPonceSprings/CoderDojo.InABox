@@ -28,6 +28,7 @@ app.config ['$routeProvider', ($routeProvider) ->
   $routeProvider.when('/', {templateUrl: 'partials/form.html', controller: 'FormController'})
   $routeProvider.when('/thankyou', {templateUrl: 'partials/thankyou.html', controller: 'ThankyouController'})
   $routeProvider.when('/signups', {templateUrl: 'partials/signups.html', controller: 'SignupsController'})
+  $routeProvider.when('/verified', {templateUrl: 'partials/verified.html', controller: 'VerifiedController'})  
   $routeProvider.when('/skillsInventory', {templateUrl: 'partials/skillsInventory.html', controller: 'SkillsInventoryController'})
   $routeProvider.otherwise({redirectTo: '/'})
 ]
@@ -177,33 +178,33 @@ app.controller 'SkillsInventoryController', ['$rootScope', '$scope', 'Signup', (
     return mentors
 ]
 
+app.queryAll = 
+  f: JSON.stringify {
+    id:1
+    firstName:1
+    lastName:1
+    email:1
+    backgroundCheckAuthorizationReceivedDate:1
+    backgroundCheckPassedDate:1
+    volunteerOffers:1
+  }
+  s: JSON.stringify {
+    backgroundCheckAuthorizationReceivedDate:1
+    backgroundCheckPassedDate:1
+    firstName:1
+  }
+
+app.queryMissingSomething = angular.copy app.queryAll
+app.queryMissingSomething.q = JSON.stringify $or: [ 
+  { backgroundCheckAuthorizationReceivedDate: null }, { backgroundCheckPassedDate: null } 
+]
+
+app.queryVerified = angular.copy app.queryAll
+app.queryVerified.q = JSON.stringify $and: [ 
+  { backgroundCheckAuthorizationReceivedDate: {$ne: null} }, { backgroundCheckPassedDate: {$ne: null} } 
+]
+
 app.controller 'SignupsController',  ['$rootScope', '$scope', 'Signup', ($rootScope, $scope, Signup) ->
-  queryAll = 
-    f: JSON.stringify {
-      id:1
-      firstName:1
-      lastName:1
-      email:1
-      backgroundCheckAuthorizationReceivedDate:1
-      backgroundCheckPassedDate:1
-      volunteerOffers:1
-    }
-    s: JSON.stringify {
-      backgroundCheckAuthorizationReceivedDate:1
-      backgroundCheckPassedDate:1
-      firstName:1
-    }
-  
-  queryMissingSomething = angular.copy queryAll
-  queryMissingSomething.q = JSON.stringify $or: [ 
-    { backgroundCheckAuthorizationReceivedDate: null }, { backgroundCheckPassedDate: null } 
-  ]
-
-  queryVerified = angular.copy queryAll
-  queryVerified.q = JSON.stringify $and: [ 
-    { backgroundCheckAuthorizationReceivedDate: {$ne: null} }, { backgroundCheckPassedDate: {$ne: null} } 
-  ]
-
   clearSearch = -> $scope.searchTerm = ''
   
   show = (query) ->
@@ -211,13 +212,13 @@ app.controller 'SignupsController',  ['$rootScope', '$scope', 'Signup', ($rootSc
     $scope.signups = Signup.query query
 
   $scope.showAll = ->
-    show queryAll
+    show app.queryAll
 
   $scope.showMissingSomething = ->
-    show queryMissingSomething
+    show app.queryMissingSomething
 
   $scope.showVerified = ->
-    show queryVerified
+    show app.queryVerified
 
   $scope.showMissingSomething()
 
@@ -242,10 +243,21 @@ app.controller 'SignupsController',  ['$rootScope', '$scope', 'Signup', ($rootSc
 
   $scope.searchByName = (name) ->
     return if name is ''
-    queryByName = angular.copy queryAll
+    queryByName = angular.copy app.queryAll
     queryByName.q = JSON.stringify $or: [ 
       {firstName: { $regex: name, $options: 'i' }}, 
       {lastName: { $regex: name, $options: 'i' }} 
     ]
     $scope.signups = Signup.query queryByName
 ]
+
+app.controller 'VerifiedController',  ['$scope', 'Signup', ($scope, Signup) ->
+  $scope.members = Signup.query app.queryVerified
+  $scope.filterByName = ->
+    return (item) ->
+      return true if not $scope.filterTerm?
+      return true if (item.firstName.toLowerCase().indexOf($scope.filterTerm.toLowerCase()) > -1 or 
+        item.lastName.toLowerCase().indexOf($scope.filterTerm.toLowerCase()) > -1)
+      return true if (item.firstName + ' ' + item.lastName).toLowerCase().indexOf($scope.filterTerm.toLowerCase()) is 0
+      return false
+]  
