@@ -7,10 +7,13 @@ module.exports =
     'Node.js'
     'Scratch'
     'Python'
+    'PERL'
     'Ruby'
     'PHP'
     'Java'
+    'Scala'
     'C#'
+    'F#'
     'Robotics'
   ]
   volunteerOffers: [
@@ -22,10 +25,6 @@ module.exports =
   ]
   availability: [
     'Sat January 25, 2 - 5 PM'
-    'Sat July 13, 2 - 5 PM'
-    'Sat July 27, 2 - 5 PM'
-    'Sat August 10, 2 - 5 PM'
-    'Sat August 24, 2 - 5 PM'
   ]
   tshirtSizes: [
     'Small'
