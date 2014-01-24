@@ -73,7 +73,7 @@
         <div class="control-group">
           <label class="control-label" for="mentorSkills">Skills</label>
           <div class="controls">
-            <label ng-repeat="skill in mentorSkills">
+            <div ng-repeat="skill in mentorSkills">
               <input
                 name='mentorSkills'
                 type="checkbox"
@@ -82,7 +82,7 @@
                 ng-model="skill.checked"
               >
               <span>{{skill.name}}</span>
-            </label>
+            </div>
           </div>
         </div>
 
@@ -99,17 +99,17 @@
         <div class="control-group">
           <label class="control-label" for="kidExperience">Kid experience</label>
           <div class="controls">
-            <label class="checkbox" for="kidExperience">
+            <div class="checkbox" for="kidExperience">
               <input ng-model="form.kidExperience" value="I have experience working or volunteering with kids ages 7 to 17" type="checkbox">
               I have experience working or volunteering with kids ages 7 to 17
-            </label>
+            </div>
           </div>
         </div>
 
         <div class="control-group">
-          <label class="control-label" for="volunteerOffers">I can help with...</label>
+          <label class="control-label" for="volunteerOffers">Stuff I can help with</label>
           <div class="controls">
-            <label ng-repeat="skill in volunteerOffers">
+            <div ng-repeat="skill in volunteerOffers">
               <input
                 name='volunteerOffers'
                 type="checkbox"
@@ -118,7 +118,7 @@
                 ng-model="skill.checked"
               >
               <span>{{skill.name}}</span>
-            </label>
+            </div>
           </div>
         </div>
 
@@ -133,8 +133,8 @@
           <label class="control-label" for="availability">Availability</label>
           <div class="controls">
             <p class="help-block" style='padding-top:5px'>Initially, we will hold sessions on Saturdays from 2 to 5 PM at the downtown location once every two weeks. This may increase or decrease over time.<br/><br/><b>Please indicate each of these days you're available:</b></p>
-            <p><br/>
-              <label ng-repeat="slot in availability">
+            <p>
+              <div ng-repeat="slot in availability">
                 <input
                   name='availability'
                   type="checkbox"
@@ -143,7 +143,7 @@
                   ng-model="slot.checked"
                 >
                 <span>{{slot.name}}</span>
-              </label>
+              </div>
             </p>
           </div>
         </div>
@@ -165,10 +165,10 @@
         <div class="control-group">
           <label class="control-label" for="backgroundCheck">Background Check</label>
           <div class="controls">
-            <label class="checkbox" for="backgroundCheck">
+            <div class="checkbox" for="backgroundCheck">
               <input ng-model="form.backgroundCheck" name="backgroundCheck" value="I agree to a background check" required type="checkbox">
               I agree to a background check
-            </label>
+            </div>
           </div>
         </div>
         <button class='btn btn-primary' type='submit' ng-disabled='signupForm.$invalid'>Send</button>

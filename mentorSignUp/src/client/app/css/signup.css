@@ -11,3 +11,15 @@ body {
 .btn span {
   vertical-align: middle;
 }
+
+label {
+	text-decoration: underline;
+}
+
+label:after {
+	content: ':';
+}
+
+div#message h4:after {
+	content: ':';
+}
