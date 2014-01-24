@@ -77,7 +77,6 @@
 
   app.controller('FormController', [
     '$rootScope', '$scope', '$location', 'Signup', '$http', function($rootScope, $scope, $location, Signup, $http) {
-      var configuration;
       $scope.form = {
         email: '',
         emailConfirm: '',
@@ -92,13 +91,9 @@
         tshirtSize: 'Medium',
         backgroundCheck: false
       };
-      configuration = $http.get({
-        method: 'GET',
-        url: '/configuration'
-      }).success(function(data, status) {});
       $http({
         method: 'GET',
-        url: '/configuration'
+        url: '/clientConfiguration'
       }).success(function(data, status, headers, config) {
         $scope.mentorSkills = checklist(data.mentorSkills);
         $scope.volunteerOffers = checklist(data.volunteerOffers);

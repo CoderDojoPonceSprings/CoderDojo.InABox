@@ -1,6 +1,7 @@
 express = require 'express'
 sg = require 'sendgrid-nodejs'
-configuration = require './configuration'
+clientConfiguration = require './clientConfiguration'
+serverConfiguration = require './serverConfiguration'
 
 createServer = ->
   app = express()
@@ -14,8 +15,8 @@ createServer = ->
 
     app.listen port
 
-  app.get '/configuration', (req, res) ->    
-    res.send configuration
+  app.get '/clientConfiguration', (req, res) ->    
+    res.send clientConfiguration
 
   app.post '/submit', (req, res) ->
     return unless req.body?
@@ -23,29 +24,30 @@ createServer = ->
     html = signup.html
     delete signup.html
     signup = JSON.stringify signup, null, 4
-    header = "#{req.body.firstName} #{req.body.lastName} <#{req.body.email}> just signed up to volunteer with CoderDojo Ponce Springs!\n\n"
+    header = serverConfiguration.emailToHostHeaderFormat req
     text = header + signup
-    htmlToV1 = header + html
+    htmlToHost = header + html
 
-    from = 'coderdojo@versionone.com'
+    from = serverConfiguration.emailFrom
 
     mail = new sg.Email({
-      to: 'coderdojo@versionone.com'
+      to: serverConfiguration.emailTo
       from: req.body.email
-      subject: "#{req.body.firstName} #{req.body.lastName} just signed up to volunteer with CoderDojo Ponce Springs!"
+      subject: serverConfiguration.emailToHostSubjectFormat req
       text: text
-      html: htmlToV1
+      html: htmlToHost
     })
 
-    headerText = "#{req.body.firstName} #{req.body.lastName}, thanks for volunteering with CoderDojo Ponce Springs! Please fill out the attached background check authorization form and return it to us by following the instructions within it.\n\nHere is a copy of the information you sent us:\n\n"
-    headerHtml = "#{req.body.firstName} #{req.body.lastName}, thanks for volunteering with CoderDojo Ponce Springs! <b>Please fill out the attached background check authorization form and return it to us by following the instructions within it.</b><br/><br/><hr/><br/>Here is a copy of the information you sent us:<br/><br/>"
+    headerText = serverConfiguration.emailToVolunteerTextFormat req
+    headerHtml = serverConfiguration.emailToVolunteerHtmlFormat req
     text = headerText + signup 
     html = headerHtml + html
 
+    # NOTE: you have to modify the files: option manually
     mailForVolunteer = new sg.Email({
       to: req.body.email
       from: from
-      subject: 'Confirmation of CoderDojo Ponce Springs sign up received'
+      subject: serverConfiguration.emailToVolunteerSubject
       text: text
       html: html
       files: 'CoderDojoPonceSprings-BackgroundCheckAuthorization.pdf': __dirname + '/../../client/app/content/CoderDojoPonceSprings-BackgroundCheckAuthorization.pdf'

@@ -49,11 +49,9 @@ app.controller 'FormController', ['$rootScope', '$scope', '$location', 'Signup',
     tshirtSize: 'Medium'
     backgroundCheck: false
 
-  configuration = $http.get({method:'GET', url: '/configuration'}).success (data, status) ->
-
   $http(
     method: 'GET'
-    url: '/configuration'
+    url: '/clientConfiguration'
   ).success((data, status, headers, config) ->
     $scope.mentorSkills = checklist data.mentorSkills
     $scope.volunteerOffers = checklist data.volunteerOffers
