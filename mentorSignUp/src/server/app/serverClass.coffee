@@ -1,5 +1,6 @@
 express = require 'express'
 sg = require 'sendgrid-nodejs'
+configuration = require './configuration'
 
 createServer = ->
   app = express()
@@ -12,6 +13,9 @@ createServer = ->
     port = process.env.PORT || 8081
 
     app.listen port
+
+  app.get '/configuration', (req, res) ->    
+    res.send configuration
 
   app.post '/submit', (req, res) ->
     return unless req.body?

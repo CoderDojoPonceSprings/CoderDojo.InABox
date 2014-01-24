@@ -49,20 +49,18 @@ app.controller 'FormController', ['$rootScope', '$scope', '$location', 'Signup',
     tshirtSize: 'Medium'
     backgroundCheck: false
 
-  $scope.mentorSkills = checklist [
-    'Arduino / Raspberry Pi / Hardware hacking'
-    'CSS'
-    'HTML5'
-    'JavaScript'
-    'Node.js'
-    'Scratch'
-    'Python'
-    'Ruby'
-    'PHP'
-    'Java'
-    'C#'
-    'Robotics'
-  ]
+  configuration = $http.get({method:'GET', url: '/configuration'}).success (data, status) ->
+
+  $http(
+    method: 'GET'
+    url: '/configuration'
+  ).success((data, status, headers, config) ->
+    $scope.mentorSkills = checklist data.mentorSkills
+    $scope.volunteerOffers = checklist data.volunteerOffers
+    $scope.availability = checklist data.availability
+    $scope.tshirtSizes = data.tshirtSizes 
+  ).error (data, status, headers, config) ->
+    console.log 'Error connecting! status: ' + status
 
   $scope.additionalSkill = value: ''
   $scope.additionalSkills = []
@@ -75,30 +73,6 @@ app.controller 'FormController', ['$rootScope', '$scope', '$location', 'Signup',
   $scope.additionalSkillRemove = (index) -> $scope.additionalSkills.splice index, 1
 
   $scope.additionalSkillAddDisabled = -> $scope.additionalSkill.value is ''
-
-  $scope.volunteerOffers = checklist [
-    'Mentoring kids on technology'
-    'Leading a 4-week exploration on a topic'
-    'Donating or reimaging computers'
-    'Reaching out to local schools to tell them about CoderDojo Ponce Springs'
-    'Supporting events as a volunteer'    
-  ]
-
-  $scope.availability = checklist [
-    'Sat June 29, 2 - 5 PM'
-    'Sat July 13, 2 - 5 PM'
-    'Sat July 27, 2 - 5 PM'
-    'Sat August 10, 2 - 5 PM'
-    'Sat August 24, 2 - 5 PM'
-  ]
-
-  $scope.tshirtSizes = [
-    'Small'
-    'Medium'
-    'Large'
-    'X-Large'
-    'XX-Large'
-  ]
 
   $scope.tshirtSizeSelect = (tshirtSize) ->
     $scope.form.tshirtSize = tshirtSize
